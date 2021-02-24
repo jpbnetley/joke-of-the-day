@@ -32,6 +32,10 @@ class Board extends React.Component {
     return this.formatJoke(currentJoke);
   }
 
+  /*TODO: component did mount. Shouldn't await in render function.
+    would use state to update render fuction when the joke is loaded.
+  */
+
   render() {
     return <div>{this.getRandomJoke().catch(({status}) => {
                 console.error("Could not fetch jokes.", status)
