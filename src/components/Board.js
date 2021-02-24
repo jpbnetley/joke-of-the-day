@@ -25,11 +25,11 @@ class Board extends React.Component {
   }
 
   async getRandomJoke() {
-    let jokesJson = await getJokesAsJson();
+    let jokesJson = await this.getJokesAsJson();
     let jokes = jokesJson.data.children;
     let jokeIndex = this.getRandomJokeIndex();
     let currentJoke = jokes[jokeIndex];
-    return formatJoke(currentJoke);
+    return this.formatJoke(currentJoke);
   }
 
   render() {
