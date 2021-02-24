@@ -33,9 +33,8 @@ class Board extends React.Component {
   }
 
   render() {
-    return <div>{this.getRandomJoke().catch(e => {
-        let {status} = e
-        console.error("Could not fetch jokes.", status)
+    return <div>{this.getRandomJoke().catch(({status}) => {
+                console.error("Could not fetch jokes.", status)
     })}</div>;
   }
 }
