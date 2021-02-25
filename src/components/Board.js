@@ -1,5 +1,7 @@
 import React from 'react'
 import Joke from './Joke'
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class Board extends React.Component {
   constructor(props) {
@@ -15,6 +17,7 @@ class Board extends React.Component {
         jokes: jokes,
       });
     } catch (error) {
+      toast.error("Could not load jokes");
       console.error("could not update board component");
       console.error("status: ", error);
     }
@@ -25,9 +28,11 @@ class Board extends React.Component {
   async getJokesAsJson() {
     const { url } = this.props;
     try {
+        toast.info("getting jokes")
       const jokes = await fetch(url);
       return await jokes.json();
     } catch (error) {
+      toast.error("Could not load jokes");
       console.error("could not fetch jokes from: ", url);
       console.error(error)
     }
@@ -78,7 +83,9 @@ class Board extends React.Component {
   }
 
   render() {
-    return <div>{this.getRandomJoke()}</div>;
+    return <div>
+            {this.getRandomJoke()}
+        </div>;
   }
 }
 
