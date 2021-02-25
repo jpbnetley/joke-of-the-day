@@ -7,7 +7,7 @@ class Joke extends React.Component {
           <div>
             <h1>{title}</h1>
             <p>{joke}</p>
-            <a href={link}>source</a>
+            <a target="_blank" rel="noreferrer" href={link}>source</a>
           </div>
         );
     }
