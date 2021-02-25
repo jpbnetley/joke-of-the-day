@@ -10,7 +10,6 @@ class Board extends React.Component {
   async componentDidMount() {
     try {
       let jokesJson = await this.getJokesAsJson();
-      console.log(jokesJson)
       let jokes = jokesJson.data.children;
       this.setState({
         jokes: jokes,
