@@ -32,18 +32,26 @@ class Board extends React.Component {
       console.error(error)
     }
   }
+
+  /**
+   * Skips the first 2 indexes as they are pinned comments on r/jokes
+   * @param {int} index 
+   */
+  skipFirst2Jokes(index) {
+    return (index !== 0 && index !== 1)
+  }
+
 /**
  * Gets the amount of jokes that was retrieved,
  * and then chooses a random joke
  * @param {*} length the array length
  */
   getRandomJokeIndex(length) {
-    const start = Math.round(Math.random() * 10, 0);
-    if (start > length) {
-        console.log("out of bounds")
+    const randomIndex = Math.round(Math.random() * 100, 0);
+    if (randomIndex > length && this.skipFirst2Jokes(randomIndex)) {
       return this.getRandomJokeIndex(length);
     } else {
-      return start;
+      return randomIndex;
     }
   }
   /**
@@ -51,9 +59,8 @@ class Board extends React.Component {
    * @param {*} jokeObject the response from the url (in this case, catering for reddit.)
    */
   formatJoke(jokeObject) {
-      console.log("formatting joke")
     const { title, selftext, url } = jokeObject.data;
-    return <Joke title={title} joke={selftext} url={url} />;
+    return <Joke title={title} joke={selftext} link={url} />;
   }
 
   /** 
@@ -64,7 +71,6 @@ class Board extends React.Component {
     if (jokes.length > 0) {
       const jokeIndex = this.getRandomJokeIndex(jokes.length);
       const currentJoke = jokes[jokeIndex];
-      console.log("current joke", currentJoke)
       return this.formatJoke(currentJoke);
     } else {
       return <Joke />;
