@@ -9,8 +9,8 @@ class Board extends React.Component {
 
   async componentDidMount() {
     try {
-      let jokesJson = await this.getJokesAsJson();
-      let jokes = jokesJson.data.children;
+      const jokesJson = await this.getJokesAsJson();
+      const jokes = jokesJson.data.children;
       this.setState({
         jokes: jokes,
       });
@@ -25,8 +25,9 @@ class Board extends React.Component {
   async getJokesAsJson() {
     const { url } = this.props;
     try {
-      let jokes = await fetch(url);
-      return JSON.parse(jokes);
+      const jokes = await fetch(url);
+      console.log(jokes.json())
+      return jokes.json();
     } catch (error) {
       console.error("could not fetch jokes from: ", url);
       console.error(error)
@@ -38,7 +39,7 @@ class Board extends React.Component {
  * @param {*} length 
  */
   getRandomJokeIndex(length) {
-    let start = Math.round(Math.random * 100, 0);
+    const start = Math.round(Math.random * 100, 0);
     if (start > length) {
       return this.getRandomJoke(length);
     } else {
@@ -50,7 +51,7 @@ class Board extends React.Component {
    * @param {*} jokeObject the response from the url (in this case, catering for reddit.)
    */
   formatJoke(jokeObject) {
-    let { title, selftext, url } = jokeObject;
+    const { title, selftext, url } = jokeObject;
 
     return <Joke title={title} joke={selftext} url={url} />;
   }
