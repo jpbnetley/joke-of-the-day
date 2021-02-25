@@ -26,8 +26,7 @@ class Board extends React.Component {
     const { url } = this.props;
     try {
       const jokes = await fetch(url);
-      console.log(jokes.json())
-      return jokes.json();
+      return await jokes.json();
     } catch (error) {
       console.error("could not fetch jokes from: ", url);
       console.error(error)
@@ -36,12 +35,13 @@ class Board extends React.Component {
 /**
  * Gets the amount of jokes that was retrieved,
  * and then chooses a random joke
- * @param {*} length 
+ * @param {*} length the array length
  */
   getRandomJokeIndex(length) {
-    const start = Math.round(Math.random * 100, 0);
+    const start = Math.round(Math.random() * 10, 0);
     if (start > length) {
-      return this.getRandomJoke(length);
+        console.log("out of bounds")
+      return this.getRandomJokeIndex(length);
     } else {
       return start;
     }
@@ -51,8 +51,8 @@ class Board extends React.Component {
    * @param {*} jokeObject the response from the url (in this case, catering for reddit.)
    */
   formatJoke(jokeObject) {
-    const { title, selftext, url } = jokeObject;
-
+      console.log("formatting joke")
+    const { title, selftext, url } = jokeObject.data;
     return <Joke title={title} joke={selftext} url={url} />;
   }
 
@@ -61,10 +61,10 @@ class Board extends React.Component {
    */
   getRandomJoke() {
     let { jokes } = this.state;
-
     if (jokes.length > 0) {
-      let jokeIndex = this.getRandomJokeIndex();
-      let currentJoke = jokes[jokeIndex];
+      const jokeIndex = this.getRandomJokeIndex(jokes.length);
+      const currentJoke = jokes[jokeIndex];
+      console.log("current joke", currentJoke)
       return this.formatJoke(currentJoke);
     } else {
       return <Joke />;

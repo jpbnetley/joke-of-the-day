@@ -2,10 +2,10 @@ import React from 'react'
 
 class Joke extends React.Component {
   render() {
-    let { title, joke, link } = this.props;
+    const { title, joke, link } = this.props;
 
     if (title && joke && link) {
-      return <p>Loading joke</p>;
+      return <p>No joke</p>;
     } else {
       return (
         <div>
