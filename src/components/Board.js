@@ -26,9 +26,10 @@ class Board extends React.Component {
     const { url } = this.props;
     try {
       let jokes = await fetch(url);
-      return jokes.json;
+      return JSON.parse(jokes);
     } catch (error) {
       console.error("could not fetch jokes from: ", url);
+      console.error(error)
     }
   }
 /**
