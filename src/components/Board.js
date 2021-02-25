@@ -10,6 +10,7 @@ class Board extends React.Component {
   async componentDidMount() {
     try {
       let jokesJson = await this.getJokesAsJson();
+      console.log(jokesJson)
       let jokes = jokesJson.data.children;
       this.setState({
         jokes: jokes,
@@ -23,13 +24,12 @@ class Board extends React.Component {
    * Requests a joke from the url
    */
   async getJokesAsJson() {
+    const { url } = this.props;
     try {
-      const { url } = this.props;
-
       let jokes = await fetch(url);
       return jokes.json;
     } catch (error) {
-      console.error("could not fetch jokes");
+      console.error("could not fetch jokes from: ", url);
     }
   }
 /**
