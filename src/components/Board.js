@@ -46,7 +46,7 @@ class Board extends React.Component {
   }
   /**
    * Formats the joke object to be a `Joke` component
-   * @param {*} jokeObject 
+   * @param {*} jokeObject the response from the url (in this case, catering for reddit.)
    */
   formatJoke(jokeObject) {
     let { title, selftext, url } = jokeObject;
