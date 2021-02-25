@@ -1,5 +1,6 @@
 import './App.css';
 import Board from './components/Board'
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   let jokeUrl = "https://www.reddit.com/r/Jokes/.json"
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Board url={jokeUrl}/>
+        <ToastContainer />
       </header>
     </div>
   );
