@@ -90,7 +90,7 @@ class Board extends React.Component {
   render() {
     return <div>
             {this.getRandomJoke()}
-            <button type="button" onClick={this.refresh}>Refresh joke</button>
+            <button type="button" onClick={() => this.refresh()}>Refresh joke</button>
         </div>;
   }
 }
