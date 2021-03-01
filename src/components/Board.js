@@ -11,6 +11,9 @@ class Board extends React.Component {
 
   async componentDidMount() {
     try {
+      if (this.state.jokes.length > 0) {
+        return
+      }
       const jokesJson = await this.getJokesAsJson();
       const jokes = jokesJson.data.children;
       this.setState({
@@ -83,8 +86,7 @@ class Board extends React.Component {
   }
 
   refresh() {
-    const newJoke = this.getRandomJoke()
-    //TODO: Replace old joke with new joke.
+    this.forceUpdate()
   }
 
   render() {
