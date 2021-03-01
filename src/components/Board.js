@@ -82,9 +82,15 @@ class Board extends React.Component {
     }
   }
 
+  refresh() {
+    const newJoke = this.getRandomJoke()
+    //TODO: Replace old joke with new joke.
+  }
+
   render() {
     return <div>
             {this.getRandomJoke()}
+            <button type="button" onClick={this.refresh}>Refresh joke</button>
         </div>;
   }
 }
