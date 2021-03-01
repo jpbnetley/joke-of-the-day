@@ -11,6 +11,9 @@ class Board extends React.Component {
 
   async componentDidMount() {
     try {
+      if (this.state.jokes.length > 0) {
+        return
+      }
       const jokesJson = await this.getJokesAsJson();
       const jokes = jokesJson.data.children;
       this.setState({
@@ -82,9 +85,14 @@ class Board extends React.Component {
     }
   }
 
+  refresh() {
+    this.forceUpdate()
+  }
+
   render() {
     return <div>
             {this.getRandomJoke()}
+            <button type="button" onClick={() => this.refresh()}>Refresh joke</button>
         </div>;
   }
 }
