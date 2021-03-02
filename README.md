@@ -9,3 +9,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### External packages
 
 - <a href="https://www.npmjs.com/package/react-toastify" target="_blank"> react-toastify</a>
+
+## Deployed site:
+https://jpbnetley.github.io/joke-of-the-day
