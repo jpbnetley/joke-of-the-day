@@ -30,8 +30,8 @@ jobs:
         run: npm ci
         
       - name: Set git details
-        run:  git config user.name github-actions
-              git config user.email github-actions@github.com
+        run:  git config --local user.email "$(git log --format='%ae' HEAD^!)"
+          git config --local user.name "$(git log --format='%an' HEAD^!)"
 
       # Runs a set of commands using the runners shell
       - name: deploy
