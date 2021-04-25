@@ -28,10 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install packages
         run: npm ci
-        
-      - name: Set git details
-        run:  git config user.email "$(git log --format='%ae' HEAD^!)"
-          git config user.name "$(git log --format='%an' HEAD^!)"
 
       # Runs a set of commands using the runners shell
       - name: deploy
