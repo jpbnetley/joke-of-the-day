@@ -21,14 +21,17 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      
+    steps:     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
       - name: Install packages
         run: npm ci
+        
+      - name: Set git details
+        run:  git config user.name github-actions
+              git config user.email github-actions@github.com
 
       # Runs a set of commands using the runners shell
       - name: deploy
