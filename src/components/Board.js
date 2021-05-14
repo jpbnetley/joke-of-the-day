@@ -35,17 +35,13 @@ formatJoke(jokeObject) {
   return <Joke title={title} joke={selftext} link={url} />;
 }
 
-  refresh() {
-    this.forceUpdate()
-  }
-
   render() {
   const joke = jokeApi.getRandomJoke(this.state)
   const renderedJoke = (joke && this.formatJoke(joke)) || <Joke />
 
     return <div>
             {renderedJoke}
-            <button type="button" onClick={() => this.refresh()}>Refresh joke</button>
+            <button type="button" onClick={() => this.forceUpdate()}>Refresh joke</button>
         </div>;
   }
 }

@@ -44,7 +44,7 @@ export const getRandomJokeIndex = (length) => {
  * Gets a random joke out of state
  */
  export const getRandomJoke = ({ jokes }) => {
-  if (jokes.length > 0) {
+  if (jokes?.length > 0) {
     const jokeIndex = getRandomJokeIndex(jokes.length);
     const currentJoke = jokes[jokeIndex] || getRandomJoke({ jokes });
     return currentJoke
