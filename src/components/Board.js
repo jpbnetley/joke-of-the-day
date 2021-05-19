@@ -1,7 +1,8 @@
 import React from 'react'
 import Joke from './Joke'
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import * as jokeApi from '../api/joke'
 
 class Board extends React.Component {
   constructor(props) {
@@ -11,10 +12,9 @@ class Board extends React.Component {
 
   async componentDidMount() {
     try {
-      if (this.state.jokes.length > 0) {
-        return
-      }
-      const jokesJson = await this.getJokesAsJson();
+      if (this.state.jokes.length > 0) return
+      
+      const jokesJson = await jokeApi.getJokesAsJson();
       const jokes = jokesJson.data.children;
       this.setState({
         jokes: jokes,
@@ -25,74 +25,23 @@ class Board extends React.Component {
       console.error("status: ", error);
     }
   }
-  /** 
-   * Requests a joke from the url
-   */
-  async getJokesAsJson() {
-    const { url } = this.props;
-    try {
-        toast.info("getting jokes")
-      const jokes = await fetch(url);
-      return await jokes.json();
-    } catch (error) {
-      toast.error("Could not load jokes");
-      console.error("could not fetch jokes from: ", url);
-      console.error(error)
-    }
-  }
 
   /**
-   * Skips the first 2 indexes as they are pinned comments on r/jokes
-   * @param {int} index 
-   */
-  skipFirst2Jokes(index) {
-    return (index !== 0 && index !== 1)
-  }
-
-/**
- * Gets the amount of jokes that was retrieved,
- * and then chooses a random joke
- * @param {*} length the array length
+ * Formats the joke object to be a `Joke` component
+ * @param {*} jokeObject the response from the url (in this case, catering for reddit.)
  */
-  getRandomJokeIndex(length) {
-    const randomIndex = Math.round(Math.random() * 100, 0);
-    if (randomIndex > length && this.skipFirst2Jokes(randomIndex)) {
-      return this.getRandomJokeIndex(length);
-    } else {
-      return randomIndex;
-    }
-  }
-  /**
-   * Formats the joke object to be a `Joke` component
-   * @param {*} jokeObject the response from the url (in this case, catering for reddit.)
-   */
-  formatJoke(jokeObject) {
-    const { title, selftext, url } = jokeObject.data;
-    return <Joke title={title} joke={selftext} link={url} />;
-  }
-
-  /** 
-   * Gets a random joke out of state
-   */
-  getRandomJoke() {
-    let { jokes } = this.state;
-    if (jokes.length > 0) {
-      const jokeIndex = this.getRandomJokeIndex(jokes.length);
-      const currentJoke = jokes[jokeIndex];
-      return this.formatJoke(currentJoke);
-    } else {
-      return <Joke />;
-    }
-  }
-
-  refresh() {
-    this.forceUpdate()
-  }
+formatJoke(jokeObject) {
+  const { title, selftext, url } = jokeObject?.data;
+  return <Joke title={title} joke={selftext} link={url} />;
+}
 
   render() {
+  const joke = jokeApi.getRandomJoke(this.state)
+  const renderedJoke = (joke && this.formatJoke(joke)) || <Joke />
+
     return <div>
-            {this.getRandomJoke()}
-            <button type="button" onClick={() => this.refresh()}>Refresh joke</button>
+            {renderedJoke}
+            <button type="button" onClick={() => this.forceUpdate()}>Refresh joke</button>
         </div>;
   }
 }
