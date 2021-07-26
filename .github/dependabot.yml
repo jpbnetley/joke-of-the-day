@@ -1,19 +1,19 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-  reviewers:
-  - jpbnetley
-  ignore:
-  - dependency-name: "@testing-library/jest-dom"
-    versions:
-    - 5.12.0
-  - dependency-name: "@testing-library/user-event"
-    versions:
-    - 13.0.16
-  - dependency-name: react-dom
-    versions:
-    - 17.0.2
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    reviewers:
+      - jpbnetley
+    ignore:
+      - dependency-name: '@testing-library/jest-dom'
+        versions:
+          - 5.12.0
+      - dependency-name: '@testing-library/user-event'
+        versions:
+          - 13.0.16
+      - dependency-name: react-dom
+        versions:
+          - 17.0.2
