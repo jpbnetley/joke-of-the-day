@@ -1,6 +1,6 @@
-import './App.css';
+import './App.css'
 import Board from './components/Board'
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <ToastContainer />
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
