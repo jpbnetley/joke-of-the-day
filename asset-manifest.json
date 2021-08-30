@@ -6,19 +6,19 @@
     "runtime-main.js": "/joke-of-the-day/static/js/runtime-main.a4d66dc2.js",
     "runtime-main.js.map": "/joke-of-the-day/static/js/runtime-main.a4d66dc2.js.map",
     "static/css/2.0975cee1.chunk.css": "/joke-of-the-day/static/css/2.0975cee1.chunk.css",
-    "static/js/2.40ea3470.chunk.js": "/joke-of-the-day/static/js/2.40ea3470.chunk.js",
-    "static/js/2.40ea3470.chunk.js.map": "/joke-of-the-day/static/js/2.40ea3470.chunk.js.map",
+    "static/js/2.ff197632.chunk.js": "/joke-of-the-day/static/js/2.ff197632.chunk.js",
+    "static/js/2.ff197632.chunk.js.map": "/joke-of-the-day/static/js/2.ff197632.chunk.js.map",
     "static/js/3.faa75478.chunk.js": "/joke-of-the-day/static/js/3.faa75478.chunk.js",
     "static/js/3.faa75478.chunk.js.map": "/joke-of-the-day/static/js/3.faa75478.chunk.js.map",
     "index.html": "/joke-of-the-day/index.html",
     "static/css/2.0975cee1.chunk.css.map": "/joke-of-the-day/static/css/2.0975cee1.chunk.css.map",
     "static/css/main.3899135a.chunk.css.map": "/joke-of-the-day/static/css/main.3899135a.chunk.css.map",
-    "static/js/2.40ea3470.chunk.js.LICENSE.txt": "/joke-of-the-day/static/js/2.40ea3470.chunk.js.LICENSE.txt"
+    "static/js/2.ff197632.chunk.js.LICENSE.txt": "/joke-of-the-day/static/js/2.ff197632.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a4d66dc2.js",
     "static/css/2.0975cee1.chunk.css",
-    "static/js/2.40ea3470.chunk.js",
+    "static/js/2.ff197632.chunk.js",
     "static/css/main.3899135a.chunk.css",
     "static/js/main.e622dabf.chunk.js"
   ]
