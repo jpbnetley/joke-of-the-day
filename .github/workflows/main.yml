@@ -37,6 +37,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install packages
+        if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm ci
 
       # Runs a single command using the runners shell
