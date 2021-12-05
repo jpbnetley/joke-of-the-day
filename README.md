@@ -4,7 +4,7 @@
 
 This app pulls a random joke from `reddit.com/r/jokes`
 
-## Running the project
+## getting started
 
 This project requires [node](https://nodejs.org/en/download/) to be installed.
 
