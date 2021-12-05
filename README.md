@@ -4,9 +4,21 @@
 
 This app pulls a random joke from `reddit.com/r/jokes`
 
-## Getting Started with Create React App
+## Running the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project requires [node](https://nodejs.org/en/download/) to be installed.
+
+### Install dependencies
+
+```bash
+npm i
+```
+
+### Running th project
+
+```bash
+npm run start
+```
 
 ### External packages
 
