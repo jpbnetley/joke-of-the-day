@@ -40,7 +40,7 @@ jobs:
           node-version: '14'
           check-latest: true
           cache: 'npm'
-        run: npm ci
+      - run: npm ci
 
       # Runs a single command using the runners shell
       # - name: Install packages
