@@ -1,25 +1,15 @@
 {
   "files": {
-    "main.css": "/joke-of-the-day/static/css/main.3efc942b.chunk.css",
-    "main.js": "/joke-of-the-day/static/js/main.ad79296b.chunk.js",
-    "main.js.map": "/joke-of-the-day/static/js/main.ad79296b.chunk.js.map",
-    "runtime-main.js": "/joke-of-the-day/static/js/runtime-main.70c4284b.js",
-    "runtime-main.js.map": "/joke-of-the-day/static/js/runtime-main.70c4284b.js.map",
-    "static/css/2.58a45539.chunk.css": "/joke-of-the-day/static/css/2.58a45539.chunk.css",
-    "static/js/2.ae2afb14.chunk.js": "/joke-of-the-day/static/js/2.ae2afb14.chunk.js",
-    "static/js/2.ae2afb14.chunk.js.map": "/joke-of-the-day/static/js/2.ae2afb14.chunk.js.map",
-    "static/js/3.6da959be.chunk.js": "/joke-of-the-day/static/js/3.6da959be.chunk.js",
-    "static/js/3.6da959be.chunk.js.map": "/joke-of-the-day/static/js/3.6da959be.chunk.js.map",
+    "main.css": "/joke-of-the-day/static/css/main.0546e3e6.css",
+    "main.js": "/joke-of-the-day/static/js/main.399d4e99.js",
+    "static/js/787.ef7f6f1e.chunk.js": "/joke-of-the-day/static/js/787.ef7f6f1e.chunk.js",
     "index.html": "/joke-of-the-day/index.html",
-    "static/css/2.58a45539.chunk.css.map": "/joke-of-the-day/static/css/2.58a45539.chunk.css.map",
-    "static/css/main.3efc942b.chunk.css.map": "/joke-of-the-day/static/css/main.3efc942b.chunk.css.map",
-    "static/js/2.ae2afb14.chunk.js.LICENSE.txt": "/joke-of-the-day/static/js/2.ae2afb14.chunk.js.LICENSE.txt"
+    "main.0546e3e6.css.map": "/joke-of-the-day/static/css/main.0546e3e6.css.map",
+    "main.399d4e99.js.map": "/joke-of-the-day/static/js/main.399d4e99.js.map",
+    "787.ef7f6f1e.chunk.js.map": "/joke-of-the-day/static/js/787.ef7f6f1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.70c4284b.js",
-    "static/css/2.58a45539.chunk.css",
-    "static/js/2.ae2afb14.chunk.js",
-    "static/css/main.3efc942b.chunk.css",
-    "static/js/main.ad79296b.chunk.js"
+    "static/css/main.0546e3e6.css",
+    "static/js/main.399d4e99.js"
   ]
 }
