@@ -5,11 +5,11 @@
 
 .loader {
   background-color: red;
-  animation-name: jokeLoader;
-  animation-duration: 2s;
   width: 37rem;
   height: 14rem;
   border-radius: 7em;
+  animation-name: jokeLoader;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -18,28 +18,11 @@
 @keyframes jokeLoader {
   from {
     background-color: red;
-  }
-  to {
-    background-color: yellow;
-  }
-
-  0% {
     width: 5em;
     height: 5em;
   }
-  25% {
-    width: 10em;
-    height: 10em;
-  }
-  50% {
-    width: 15em;
-    height: 15em;
-  }
-  75% {
-    width: 20em;
-    height: 20em;
-  }
-  100% {
+  to {
+    background-color: yellow;
     width: 25em;
     height: 25em;
   }
