@@ -1,0 +1,12 @@
+.card {
+  background-color: #e938384f;
+  min-width: 50vw;
+  min-height: 30vh;
+  border-radius: 1em;
+  border-style: solid;
+  border-color: darkred;
+  padding: 1em;
+  max-width: 60vw;
+  max-height: 80vh;
+  font-size: 1rem;
+}

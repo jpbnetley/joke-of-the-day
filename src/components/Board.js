@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import Joke from './Joke'
+import Card from './card'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import * as jokeApi from '../api/joke'
+import Loader from './loader'
 
 const Board = () => {
   const [jokes, setJokes] = useState([])
@@ -34,16 +36,23 @@ const Board = () => {
     return <Joke title={title} joke={selftext} link={url} />
   }
 
+  if (jokes?.length === 0)
+    return (
+      <Card>
+        <Loader />
+      </Card>
+    )
+
   const joke = jokeApi.getRandomJoke(jokes)
-  const renderedJoke = (joke && formatJoke(joke)) || <Joke />
+  const renderedJoke = formatJoke(joke)
 
   return (
-    <div>
+    <Card>
       {renderedJoke}
       <button type="button" onClick={onUpdateClick}>
         Refresh joke
       </button>
-    </div>
+    </Card>
   )
 }
 
