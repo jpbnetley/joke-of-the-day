@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import Joke from './joke'
-import Card from './card'
+import Joke from 'components/joke'
+import Card from 'components/card'
 import { toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-import * as jokeApi from '../api/joke'
+import * as jokeApi from 'api/joke'
+
 import Loader from './loader'
 
 const Board = () => {
