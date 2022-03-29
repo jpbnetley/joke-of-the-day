@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Joke from './Joke'
+import Joke from './joke'
 import Card from './card'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
