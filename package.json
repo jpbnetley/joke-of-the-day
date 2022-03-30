@@ -15,13 +15,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "clean": "rm -rf node_modules && rm package-lock.json && npm i",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:wa": "jest --watchAll",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -44,7 +44,6 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
-    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "2.6.1"
