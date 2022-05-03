@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
+import { toast } from 'react-toastify'
 import Joke from 'components/joke'
 import Card from 'components/card'
-import { toast } from 'react-toastify'
 import * as jokeApi from 'api/joke'
 
 import Loader from './loader'
