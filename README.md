@@ -14,7 +14,7 @@ This project requires [node](https://nodejs.org/en/download/) to be installed.
 npm i
 ```
 
-### Running th project
+### Running the project
 
 ```bash
 npm run start
