@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 
 import style from './styles.module.css'
 
-const Joke = ({ title, joke, link }) => {
+type Props = {
+  title: string
+  joke: string
+  link: string
+} & PropsWithChildren
+
+const Joke = ({ title, joke, link }: Props) => {
   if (!(title && joke && link)) return <p></p>
 
   return (

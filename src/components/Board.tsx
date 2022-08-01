@@ -5,12 +5,13 @@ import Card from 'components/card'
 import * as jokeApi from 'api/joke'
 
 import Loader from './loader'
+import { RedditJokeResponse } from 'types/reddit'
 
 const Board = () => {
   const [jokes, setJokes] = useState([])
   const [shouldRefresh, setRefresh] = useState(false)
 
-  const onUpdateClick = () => setRefresh(!shouldRefresh)
+  const handleUpdateClick = () => setRefresh(!shouldRefresh)
 
   useEffect(() => {
     const fetchJokes = async () => {
@@ -31,25 +32,30 @@ const Board = () => {
    * Formats the joke object to be a `Joke` component
    * @param {*} jokeObject the response from the url (in this case, catering for reddit.)
    */
-  const formatJoke = (jokeObject) => {
-    const { title, selftext, url } = jokeObject?.data
+  const formatJoke = (jokeObject: RedditJokeResponse) => {
+    const redditJoke = jokeObject?.data
+
+    if (!(jokes?.length || redditJoke))
+      return (
+        <Card>
+          <Loader />
+        </Card>
+      )
+
+    const { title, selftext, url } = redditJoke ?? {
+      title: '',
+      selftext: '',
+      url: '',
+    }
     return <Joke title={title} joke={selftext} link={url} />
   }
 
-  if (jokes?.length === 0)
-    return (
-      <Card>
-        <Loader />
-      </Card>
-    )
-
   const joke = jokeApi.getRandomJoke(jokes)
-  const renderedJoke = formatJoke(joke)
 
   return (
     <Card>
-      {renderedJoke}
-      <button type="button" onClick={onUpdateClick}>
+      {formatJoke(joke)}
+      <button type="button" onClick={handleUpdateClick}>
         Refresh joke
       </button>
     </Card>

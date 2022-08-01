@@ -1,4 +1,5 @@
 import { toast } from 'react-toastify'
+import { RedditJokeResponse } from 'types/reddit'
 
 const url = 'https://www.reddit.com/r/Jokes/.json'
 
@@ -21,17 +22,17 @@ export const getJokesAsJson = async () => {
  * Skips the first 2 indexes as they are pinned comments on r/jokes
  * @param {int} index
  */
-export const skipFirst2Jokes = (index) => {
+export const skipFirst2Jokes = (index: number) => {
   return index !== 0 && index !== 1
 }
 
 /**
  * Gets the amount of jokes that was retrieved,
  * and then chooses a random joke
- * @param {*} length the array length
+ * @param {number} length the array length
  */
-export const getRandomJokeIndex = (length) => {
-  const randomIndex = Math.round(Math.random() * 100, 0)
+export const getRandomJokeIndex = (length: number): number => {
+  const randomIndex = Math.round(Math.random() * 100)
   if (randomIndex > length && skipFirst2Jokes(randomIndex)) {
     return getRandomJokeIndex(length)
   } else {
@@ -42,15 +43,17 @@ export const getRandomJokeIndex = (length) => {
 /**
  * Gets a random joke out of state
  */
-export const getRandomJoke = (jokes) => {
-  if (jokes?.length > 0) {
-    const jokeIndex = getRandomJokeIndex(jokes.length)
-    const currentJoke = jokes[jokeIndex]
+export const getRandomJoke = (
+  jokes: Array<RedditJokeResponse>
+): RedditJokeResponse => {
+  if (!jokes.length) return {}
 
-    const { title, selftext } = currentJoke?.data || {}
+  const jokeIndex = getRandomJokeIndex(jokes.length)
+  const currentJoke = jokes[jokeIndex]
 
-    if (!(title || selftext)) return getRandomJoke(jokes)
+  const { title, selftext } = currentJoke?.data ?? {}
 
-    return currentJoke
-  }
+  if (!(title ?? selftext)) return getRandomJoke(jokes)
+
+  return currentJoke
 }
