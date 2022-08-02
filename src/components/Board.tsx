@@ -35,19 +35,17 @@ const Board = () => {
   const formatJoke = (jokeObject: RedditJokeResponse) => {
     const redditJoke = jokeObject?.data
 
-    if (!(jokes?.length || redditJoke))
+    if (!jokes?.length)
       return (
         <Card>
           <Loader />
         </Card>
       )
 
-    const { title, selftext, url } = redditJoke ?? {
-      title: '',
-      selftext: '',
-      url: '',
+    if (redditJoke) {
+      const { title, selftext, url } = redditJoke
+      return <Joke title={title} joke={selftext} link={url} />
     }
-    return <Joke title={title} joke={selftext} link={url} />
   }
 
   const joke = jokeApi.getRandomJoke(jokes)
