@@ -23,7 +23,7 @@
     "clean": "rm -rf node_modules && rm package-lock.json && npm i",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "test:wa": "jest --watchAll",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
