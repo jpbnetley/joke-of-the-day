@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/joke-of-the-day/static/css/main.69c55c18.css",
-    "main.js": "/joke-of-the-day/static/js/main.df0fc49d.js",
+    "main.css": "/joke-of-the-day/static/css/main.78b7c38b.css",
+    "main.js": "/joke-of-the-day/static/js/main.621a4d61.js",
     "static/js/787.933e55a8.chunk.js": "/joke-of-the-day/static/js/787.933e55a8.chunk.js",
     "index.html": "/joke-of-the-day/index.html",
-    "main.69c55c18.css.map": "/joke-of-the-day/static/css/main.69c55c18.css.map",
-    "main.df0fc49d.js.map": "/joke-of-the-day/static/js/main.df0fc49d.js.map",
+    "main.78b7c38b.css.map": "/joke-of-the-day/static/css/main.78b7c38b.css.map",
+    "main.621a4d61.js.map": "/joke-of-the-day/static/js/main.621a4d61.js.map",
     "787.933e55a8.chunk.js.map": "/joke-of-the-day/static/js/787.933e55a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69c55c18.css",
-    "static/js/main.df0fc49d.js"
+    "static/css/main.78b7c38b.css",
+    "static/js/main.621a4d61.js"
   ]
 }
