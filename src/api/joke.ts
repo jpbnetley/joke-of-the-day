@@ -1,20 +1,19 @@
 import { toast } from 'react-toastify'
 import { RedditJokeResponse } from 'types/reddit'
 
-const url = 'https://www.reddit.com/r/Jokes/.json'
+const URL = 'https://www.reddit.com/r/Jokes/.json'
 
 /**
  * Requests a joke from the url
  */
-export const getJokesAsJson = async () => {
+export const getJokesAsJson = async (signal: AbortSignal) => {
   try {
     toast.info('getting jokes')
-    const jokes = await fetch(url)
-    return await jokes.json()
+    const jokes = await fetch(URL, { signal })
+    const jokeJson = await jokes.json()
+    return jokeJson
   } catch (error) {
-    toast.error('Could not load jokes')
-    console.error('could not fetch jokes from: ', url)
-    console.error(error)
+    console.error('could not fetch jokes from: ', URL, error)
   }
 }
 
@@ -44,7 +43,7 @@ export const getRandomJokeIndex = (length: number): number => {
  * Gets a random joke out of state
  */
 export const getRandomJoke = (
-  jokes: Array<RedditJokeResponse>
+  jokes: RedditJokeResponse[]
 ): RedditJokeResponse => {
   if (!jokes.length) return {}
 
