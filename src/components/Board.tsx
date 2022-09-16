@@ -6,7 +6,7 @@ import Joke from 'components/Joke'
 import Card from 'components/cards/Card'
 import LoadingCard from 'components/cards/LoadingCard'
 
-import { RedditJoke, RedditJokeResponse } from 'types/reddit'
+import { RedditJokeResponse } from 'types/reddit'
 
 const Board = () => {
   const [isLoading, setIsLoading] = useState<Boolean>(false)
@@ -36,28 +36,17 @@ const Board = () => {
     return () => abortController.abort()
   }, [])
 
-  /**
-   * Formats the joke object to be a `Joke` component
-   * @param {RedditJokeResponse} jokeObject the response from the url (in this case, catering for reddit.)
-   */
-  const formatJoke = (jokeObject: RedditJokeResponse) => {
-    const redditJoke = jokeObject?.data
-
-    if (isLoading) return <LoadingCard />
-    if (!redditJoke) return null
-
-    const { title, selftext, url } = redditJoke
-    return <Joke title={title} joke={selftext} link={url} />
-  }
-
   const joke = jokeApi.getRandomJoke(jokes)
-  const formattedJoke = formatJoke(joke)
+  if (isLoading) return <LoadingCard />
 
-  if (!formattedJoke) return null
+  const redditJoke = joke?.data
+  if (!redditJoke) return null
+
+  const { title, selftext, url } = redditJoke
 
   return (
     <Card>
-      {formattedJoke}
+      <Joke title={title} joke={selftext} link={url} />
       <button type="button" onClick={handleRefreshJokeClick}>
         Refresh joke
       </button>

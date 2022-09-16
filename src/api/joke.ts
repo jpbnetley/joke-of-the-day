@@ -19,10 +19,12 @@ export const getJokesAsJson = async (signal: AbortSignal) => {
 
 /**
  * Skips the first 2 indexes as they are pinned comments on r/jokes
- * @param {int} index
+ * @param {number} index
+ * @returns {boolean} if the first 2 joke should be skipped
  */
-export const skipFirst2Jokes = (index: number) => {
-  return index !== 0 && index !== 1
+export const skipFirst2Jokes = (index: number): boolean => {
+  const skipIndexes = [0, 1]
+  return skipIndexes.includes(index)
 }
 
 /**
