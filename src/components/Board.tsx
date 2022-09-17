@@ -21,13 +21,14 @@ const Board = () => {
     const fetchJokes = async () => {
       try {
         setIsLoading(true)
+        toast.info('getting jokes')
         const jokesJson = await jokeApi.getJokesAsJson(abortController.signal)
         const jokes = jokesJson.data.children
         setJokes(jokes)
         setIsLoading(false)
       } catch (error) {
-        toast.error('Could not load jokes')
         console.error('status: ', error)
+        toast.error('Could not load jokes')
         setIsLoading(false)
       }
     }

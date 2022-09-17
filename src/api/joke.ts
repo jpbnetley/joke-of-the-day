@@ -1,4 +1,3 @@
-import { toast } from 'react-toastify'
 import { RedditJokeResponse } from 'types/reddit'
 
 const URL = 'https://www.reddit.com/r/Jokes/.json'
@@ -8,7 +7,6 @@ const URL = 'https://www.reddit.com/r/Jokes/.json'
  */
 export const getJokesAsJson = async (signal: AbortSignal) => {
   try {
-    toast.info('getting jokes')
     const jokes = await fetch(URL, { signal })
     const jokeJson = await jokes.json()
     return jokeJson
@@ -24,7 +22,7 @@ export const getJokesAsJson = async (signal: AbortSignal) => {
  */
 export const skipFirst2Jokes = (index: number): boolean => {
   const skipIndexes = [0, 1]
-  return skipIndexes.includes(index)
+  return !skipIndexes.includes(index)
 }
 
 /**
