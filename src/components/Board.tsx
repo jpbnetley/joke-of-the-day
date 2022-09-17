@@ -1,59 +1,53 @@
 import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
-import Joke from 'components/joke'
-import Card from 'components/card'
-import * as jokeApi from 'api/joke'
 
-import Loader from './loader'
+import * as jokeApi from 'api/joke'
+import Joke from 'components/Joke'
+import Card from 'components/cards/Card'
+import LoadingCard from 'components/cards/LoadingCard'
+
 import { RedditJokeResponse } from 'types/reddit'
 
 const Board = () => {
-  const [jokes, setJokes] = useState([])
-  const [shouldRefresh, setRefresh] = useState(false)
+  const [isLoading, setIsLoading] = useState<Boolean>(false)
+  const [jokes, setJokes] = useState<RedditJokeResponse[]>([])
+  const [shouldRefresh, setRefresh] = useState<Boolean>(false)
 
-  const handleUpdateClick = () => setRefresh(!shouldRefresh)
+  const handleRefreshJokeClick = () => setRefresh(!shouldRefresh)
 
   useEffect(() => {
+    const abortController = new AbortController()
+
     const fetchJokes = async () => {
       try {
-        const jokesJson = await jokeApi.getJokesAsJson()
+        setIsLoading(true)
+        const jokesJson = await jokeApi.getJokesAsJson(abortController.signal)
         const jokes = jokesJson.data.children
         setJokes(jokes)
+        setIsLoading(false)
       } catch (error) {
         toast.error('Could not load jokes')
-        console.error('could not onUpdateClick board component')
         console.error('status: ', error)
+        setIsLoading(false)
       }
     }
     fetchJokes()
+
+    return () => abortController.abort()
   }, [])
 
-  /**
-   * Formats the joke object to be a `Joke` component
-   * @param {*} jokeObject the response from the url (in this case, catering for reddit.)
-   */
-  const formatJoke = (jokeObject: RedditJokeResponse) => {
-    const redditJoke = jokeObject?.data
-
-    if (!jokes?.length)
-      return (
-        <Card>
-          <Loader />
-        </Card>
-      )
-
-    if (redditJoke) {
-      const { title, selftext, url } = redditJoke
-      return <Joke title={title} joke={selftext} link={url} />
-    }
-  }
-
   const joke = jokeApi.getRandomJoke(jokes)
+  if (isLoading) return <LoadingCard />
+
+  const redditJoke = joke?.data
+  if (!redditJoke) return null
+
+  const { title, selftext, url } = redditJoke
 
   return (
     <Card>
-      {formatJoke(joke)}
-      <button type="button" onClick={handleUpdateClick}>
+      <Joke title={title} joke={selftext} link={url} />
+      <button type="button" onClick={handleRefreshJokeClick}>
         Refresh joke
       </button>
     </Card>
