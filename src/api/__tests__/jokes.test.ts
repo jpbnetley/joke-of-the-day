@@ -1,5 +1,4 @@
-import type * as JokeType from 'api/joke'
-const { skipFirst2Jokes } = jest.requireActual<typeof JokeType>('../joke')
+import { skipFirst2Jokes } from 'api/joke'
 
 describe(`${skipFirst2Jokes.name}`, () => {
   test('index 0 and 1 should be false, > 1 should be true', () => {

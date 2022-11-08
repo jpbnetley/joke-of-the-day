@@ -26,10 +26,11 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
           check-latest: true
           cache: 'npm'
       - run: npm ci
+      # - run: npm pkg set scripts.prepare="exit 0" && npm ci --only=production
 
       # Runs a single command using the runners shell
       - name: Run tests
@@ -42,4 +43,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build
+          folder: dist
