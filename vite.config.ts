@@ -19,4 +19,5 @@ export default defineConfig({
   test: {
     globals: true,
   },
+  base: '/joke-of-the-day/',
 })
