@@ -4,9 +4,11 @@
 
 This app pulls a random joke from `reddit.com/r/jokes`
 
+- [Reddit api](https://www.reddit.com/dev/api)
+
 ## Getting started
 
-This project requires [node](https://nodejs.org/en/download/) to be installed.
+This project requires [nodeJS](https://nodejs.org/en/download) to be installed.
 
 ### Install dependencies
 
