@@ -3,7 +3,7 @@ import Loader from 'components/Loader'
 
 const LoadingCard = () => (
 	<Card>
-		  <Loader />
+		<Loader />
 	</Card>
 )
 
