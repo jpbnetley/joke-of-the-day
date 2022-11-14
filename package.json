@@ -21,7 +21,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest --run",
     "test:wa": "vitest -w",
     "predeploy": "npm run build",
     "prepare": "exit 0",
