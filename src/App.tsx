@@ -1,17 +1,24 @@
 import { ToastContainer } from 'react-toastify'
-import { StrictMode } from 'react'
+import { StrictMode, lazy, Suspense } from 'react'
 
-import Board from 'components/Board'
+const Board = lazy(() => import('components/Board'))
 
 import './App.css'
 import 'react-toastify/dist/ReactToastify.css'
+import LoadingCard from 'components/cards/LoadingCard'
+import ErrorBoundary from 'components/error-boundary/ErrorBoundary'
 
 function App() {
 	return (
+		
 		<StrictMode>
 			<div className="App">
 				<header className="App-header">
-					<Board />
+					<ErrorBoundary>
+						<Suspense fallback={<LoadingCard />}>
+							<Board />
+						</Suspense>
+					</ErrorBoundary>
 					<ToastContainer />
 				</header>
 			</div>

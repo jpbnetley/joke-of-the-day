@@ -1,44 +1,24 @@
-import { useEffect, useState } from 'react'
-import { toast } from 'react-toastify'
+import {  useState } from 'react'
 
 import * as jokeApi from 'api/joke'
 import Joke from 'components/Joke'
 import Card from 'components/cards/Card'
-import LoadingCard from 'components/cards/LoadingCard'
 
 import { RedditJokeResponse } from 'types/reddit'
+import wrapPromise from 'utils/promises/wrap-promise'
+import getJokes from 'utils/get-data/jokes'
+
+const handleFetchJokes = wrapPromise<RedditJokeResponse[]>(getJokes)
 
 const Board = () => {
-	const [isLoading, setIsLoading] = useState<boolean>(false)
-	const [jokes, setJokes] = useState<RedditJokeResponse[]>([])
 	const [shouldRefresh, setRefresh] = useState<boolean>(false)
 
 	const handleRefreshJokeClick = () => setRefresh(!shouldRefresh)
 
-	useEffect(() => {
-		const abortController = new AbortController()
-
-		const fetchJokes = async () => {
-			try {
-				setIsLoading(true)
-				toast.info('getting jokes')
-				const jokesJson = await jokeApi.getJokesAsJson(abortController.signal)
-				const jokes = jokesJson.data.children
-				setJokes(jokes)
-				setIsLoading(false)
-			} catch (error) {
-				console.error('status: ', error)
-				toast.error('Could not load jokes')
-				setIsLoading(false)
-			}
-		}
-		fetchJokes()
-
-		return () => abortController.abort()
-	}, [])
+	const jokes = handleFetchJokes.read()
+	if (!jokes) return null
 
 	const joke = jokeApi.getRandomJoke(jokes)
-	if (isLoading) return <LoadingCard />
 
 	const redditJoke = joke?.data
 	if (!redditJoke) return null
