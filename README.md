@@ -24,7 +24,7 @@ npm run start
 
 ### External packages
 
-- <a href="https://www.npmjs.com/package/react-toastify" target="_blank"> react-toastify</a>
+- <a href="https://react-hot-toast.com/docs" target="_blank">react-hot-toast</a>
 
 ## Deployed site:
 
