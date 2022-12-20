@@ -1,10 +1,9 @@
-import { ToastContainer } from 'react-toastify'
+import { Toaster } from 'react-hot-toast'
 import { StrictMode } from 'react'
 
 import Board from 'components/Board'
 
 import './App.css'
-import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
 	return (
@@ -12,7 +11,7 @@ function App() {
 			<div className="App">
 				<header className="App-header">
 					<Board />
-					<ToastContainer />
+					<Toaster position="top-right"/>
 				</header>
 			</div>
 		</StrictMode>

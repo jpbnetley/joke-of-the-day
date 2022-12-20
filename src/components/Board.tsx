@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { toast } from 'react-toastify'
+import toast from 'react-hot-toast'
 
 import * as jokeApi from 'api/joke'
 import Joke from 'components/Joke'
@@ -21,18 +21,29 @@ const Board = () => {
 		const fetchJokes = async () => {
 			try {
 				setIsLoading(true)
-				toast.info('getting jokes')
 				const jokesJson = await jokeApi.getJokesAsJson(abortController.signal)
 				const jokes = jokesJson.data.children
 				setJokes(jokes)
 				setIsLoading(false)
 			} catch (error) {
-				console.error('status: ', error)
-				toast.error('Could not load jokes')
 				setIsLoading(false)
+
+				if (error instanceof Error) {
+					if (abortController.signal.aborted) return
+					console.error(error.message)
+					throw new Error(error.message)
+				}
+
+				console.error(error)
+				throw new Error(String(error))
 			}
 		}
-		fetchJokes()
+		const jokesPromise = fetchJokes()
+		toast.promise(jokesPromise, {
+			loading: 'Getting jokes',
+			success: 'Got the Jokes',
+			error: 'Could not load jokes',
+		})
 
 		return () => abortController.abort()
 	}, [])
