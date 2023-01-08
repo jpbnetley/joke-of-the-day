@@ -11,15 +11,25 @@ This app pulls a random joke from `reddit.com/r/jokes`
 This project requires [nodeJS](https://nodejs.org/en/download) to be installed.
 
 ### Install dependencies
-
+#### Using NPM package manager
 ```bash
 npm i
 ```
+#### Using PNPM package manager
+```bash
+pnpm i
+```
 
 ### Running the project
+#### Using NPM package manager
 
 ```bash
 npm run start
+```
+
+#### Using PNPM package manager
+```bash
+pnpm run start
 ```
 
 ### External packages
