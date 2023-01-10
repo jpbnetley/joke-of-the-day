@@ -33,14 +33,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
-      - run: pnpm install --frozen-lockfile --prod
-      # - run: npm pkg set scripts.prepare="exit 0" && npm ci --only=production
+    - run: pnpm install --frozen-lockfile --prod
 
-      - name: Build
-        run: pnpm run build
+    - name: Build
+      run: pnpm run build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: dist
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: dist
