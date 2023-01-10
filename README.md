@@ -11,20 +11,30 @@ This app pulls a random joke from `reddit.com/r/jokes`
 This project requires [nodeJS](https://nodejs.org/en/download) to be installed.
 
 ### Install dependencies
-
+#### Using NPM package manager
 ```bash
 npm i
 ```
+#### Using PNPM package manager
+```bash
+pnpm i
+```
 
 ### Running the project
+#### Using NPM package manager
 
 ```bash
 npm run start
 ```
 
+#### Using PNPM package manager
+```bash
+pnpm run start
+```
+
 ### External packages
 
-- <a href="https://www.npmjs.com/package/react-toastify" target="_blank"> react-toastify</a>
+- <a href="https://react-hot-toast.com/docs" target="_blank">react-hot-toast</a>
 
 ## Deployed site:
 
