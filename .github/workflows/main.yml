@@ -8,6 +8,9 @@ on:
   push:
     branches: [master]
 
+env:
+  node_version: 18
+
 concurrency:
   group: ${{ github.ref }}
   cancel-in-progress: true
@@ -18,29 +21,23 @@ jobs:
   build-and-publish:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 7
+    - name: Use Node.js ${{ env.node_version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ env.node_version }}
+        cache: 'pnpm'
+    - run: pnpm install --prod
 
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          check-latest: true
-          cache: 'npm'
-      - run: npm ci
-      # - run: npm pkg set scripts.prepare="exit 0" && npm ci --only=production
+    - name: Build
+      run: pnpm run build
 
-      # Runs a single command using the runners shell
-      - name: Run tests
-        run: npm test
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: dist
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: dist

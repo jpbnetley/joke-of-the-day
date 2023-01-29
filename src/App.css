@@ -38,9 +38,15 @@
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #19861d;
   color: white;
   padding: 15px 32px;
   font-size: 16px;
   margin: 20px;
+  border-radius: 0.5em;
+}
+
+button:hover {
+  background-color: #3b9f16;
+  box-shadow: 0.2em 0.7em rgb(59, 60, 59);
 }
