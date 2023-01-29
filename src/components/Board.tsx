@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import toast from 'react-hot-toast'
+import { useState } from 'react'
 
 import * as jokeApi from 'api/joke'
 import Joke from 'components/Joke'
