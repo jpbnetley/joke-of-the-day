@@ -1,30 +1,38 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import * as jokeApi from 'api/joke'
-import Joke from 'components/Joke'
-import Card from 'components/cards/Card'
-
-import { RedditJokeResponse } from 'types/reddit'
-import wrapPromise from 'utils/promises/wrap-promise'
+import Joke from 'components/joke'
+import Card from 'components/cards/card'
 import getJokes from 'utils/get-data/jokes'
+import { RedditJoke } from 'types/reddit'
+import useGetData from 'utils/promises/useGetData'
 
-const handleFetchJokes = wrapPromise<RedditJokeResponse[]>(getJokes)
+const JOKE_FALLBACK: RedditJoke = {title: '', selftext: '', url: ''}
+
 
 const Board = () => {
 	const [shouldRefresh, setRefresh] = useState<boolean>(false)
+	const [redditJoke, setRedditJoke] = useState<RedditJoke>()
 
 	const handleRefreshJokeClick = () => setRefresh(!shouldRefresh)
 
-	const jokes = handleFetchJokes.read()
-	if (!jokes) return null
+	const { data: jokes } = useGetData('jokes',getJokes, { suspense: true })
 
-	const joke = jokeApi.getRandomJoke(jokes)
+	useEffect(() => {
+		const setRandomJoke = () => {
+			if (!jokes) return
+			const joke = jokeApi.getRandomJoke(jokes)
+			const redditJoke = joke?.data
 
-	const redditJoke = joke?.data
-	if (!redditJoke) return null
+			setRefresh(!shouldRefresh)
+			setRedditJoke(redditJoke)
+		}
 
-	const { title, selftext, url } = redditJoke
+		if (jokes?.length && (!redditJoke || shouldRefresh)) setRandomJoke()
+	}, [jokes, setRedditJoke, shouldRefresh])
 
+
+	const { title, selftext, url } = redditJoke ?? JOKE_FALLBACK
 	return (
 		<Card>
 			<Joke title={title} joke={selftext} link={url} />
