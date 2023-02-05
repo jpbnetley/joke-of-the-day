@@ -4,7 +4,7 @@ import { StrictMode, lazy, Suspense } from 'react'
 const Board = lazy(() => import('components/Board'))
 
 import './App.css'
-import LoadingCard from 'components/cards/LoadingCard'
+import LoadingCard from 'components/cards/loading-card'
 import ErrorBoundary from 'components/error-boundary/ErrorBoundary'
 
 function App() {

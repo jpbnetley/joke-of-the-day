@@ -1,5 +1,5 @@
-import Card from 'components/cards/Card'
-import Loader from 'components/Loader'
+import Card from 'components/cards/card'
+import Loader from 'components/loader'
 
 const LoadingCard = () => (
 	<Card>
