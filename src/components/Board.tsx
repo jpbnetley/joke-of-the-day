@@ -1,61 +1,38 @@
 import { useEffect, useState } from 'react'
-import toast from 'react-hot-toast'
 
 import * as jokeApi from 'api/joke'
-import Joke from 'components/Joke'
-import Card from 'components/cards/Card'
-import LoadingCard from 'components/cards/LoadingCard'
+import Joke from 'components/joke'
+import Card from 'components/cards/card'
+import getJokes from 'utils/get-data/jokes'
+import { RedditJoke } from 'types/reddit'
+import useGetData from 'utils/promises/useGetData'
 
-import { RedditJokeResponse } from 'types/reddit'
+const JOKE_FALLBACK: RedditJoke = {title: '', selftext: '', url: ''}
+
 
 const Board = () => {
-	const [isLoading, setIsLoading] = useState<boolean>(false)
-	const [jokes, setJokes] = useState<RedditJokeResponse[]>([])
 	const [shouldRefresh, setRefresh] = useState<boolean>(false)
+	const [redditJoke, setRedditJoke] = useState<RedditJoke>()
 
 	const handleRefreshJokeClick = () => setRefresh(!shouldRefresh)
 
+	const { data: jokes } = useGetData('jokes',getJokes, { suspense: true })
+
 	useEffect(() => {
-		const abortController = new AbortController()
+		const setRandomJoke = () => {
+			if (!jokes) return
+			const joke = jokeApi.getRandomJoke(jokes)
+			const redditJoke = joke?.data
 
-		const fetchJokes = async () => {
-			try {
-				setIsLoading(true)
-				const jokesJson = await jokeApi.getJokesAsJson(abortController.signal)
-				const jokes = jokesJson.data.children
-				setJokes(jokes)
-				setIsLoading(false)
-			} catch (error) {
-				setIsLoading(false)
-
-				if (error instanceof Error) {
-					if (abortController.signal.aborted) return
-					console.error(error.message)
-					throw new Error(error.message)
-				}
-
-				console.error(error)
-				throw new Error(String(error))
-			}
+			setRefresh(!shouldRefresh)
+			setRedditJoke(redditJoke)
 		}
-		const jokesPromise = fetchJokes()
-		toast.promise(jokesPromise, {
-			loading: 'Getting jokes',
-			success: 'Got the Jokes',
-			error: 'Could not load jokes',
-		})
 
-		return () => abortController.abort()
-	}, [])
+		if (jokes?.length && (!redditJoke || shouldRefresh)) setRandomJoke()
+	}, [jokes, setRedditJoke, shouldRefresh])
 
-	const joke = jokeApi.getRandomJoke(jokes)
-	if (isLoading) return <LoadingCard />
 
-	const redditJoke = joke?.data
-	if (!redditJoke) return null
-
-	const { title, selftext, url } = redditJoke
-
+	const { title, selftext, url } = redditJoke ?? JOKE_FALLBACK
 	return (
 		<Card>
 			<Joke title={title} joke={selftext} link={url} />

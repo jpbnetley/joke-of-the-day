@@ -34,3 +34,5 @@ pnpm run start
 ## Deployed site:
 
 https://jpbnetley.github.io/joke-of-the-day
+
+## [Additional resources](./RESOURCES.md)
