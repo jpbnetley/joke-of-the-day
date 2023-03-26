@@ -1,4 +1,4 @@
-import { RedditJokeResponse } from 'types/reddit'
+import { RedditJokeResponse } from 'types/models/reddit'
 
 const URL = 'https://www.reddit.com/r/Jokes/.json'
 
