@@ -4,7 +4,7 @@ import * as jokeApi from 'api/joke'
 import Joke from 'components/joke'
 import Card from 'components/cards/card'
 import getJokes from 'utils/get-data/jokes'
-import { RedditJoke } from 'types/reddit'
+import { RedditJoke } from 'types/models/reddit'
 import useGetData from 'utils/promises/useGetData'
 
 const JOKE_FALLBACK: RedditJoke = {title: '', selftext: '', url: ''}
