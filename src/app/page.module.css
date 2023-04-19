@@ -1,0 +1,14 @@
+
+.MainContainer {
+  min-height: 100svh;
+  min-width: 100svw;
+}
+
+.AppHeader {
+  background-color: #282c34;
+  min-height: 10svh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+
