@@ -19,13 +19,15 @@ export default function Home() {
 			<header className={styles.AppHeader}>
         Random jokes from Reddit
 			</header>
-			{/* // TODO: Center card */}
+			
+			<div className={styles.PageContainer}>
 			<ErrorBoundary>
 				<Suspense fallback={<LoadingCard />}>
 					<Board />
 				</Suspense>
 			</ErrorBoundary>
 			<Toaster position="top-right"/>
+			</div>
 		</main>
 	)
 }

@@ -12,3 +12,9 @@
   text-align: center;
 }
 
+.PageContainer {
+  display: grid;
+  place-content: center;
+  height: 100svh;
+}
+
