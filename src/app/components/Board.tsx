@@ -1,8 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { SWRConfiguration } from 'swr'
 
-// import * as jokeApi from 'api'
+import * as jokeApi from 'utils/get-data/reddit/joke'
 import Joke from 'app/components/joke'
 import Card from 'app/components/cards/card'
 import getJokes from 'utils/get-data/jokes'
@@ -18,22 +19,20 @@ const Board = () => {
 
 	const handleRefreshJokeClick = () => setRefresh(shouldRefresh => !shouldRefresh)
 
-	// TODO: check fetch data from api
+	const { data: jokes } = useGetData('jokes', getJokes, { suspense: true, fallbackData: [] } satisfies SWRConfiguration)
 
-	const { data: jokes } = useGetData('jokes',getJokes/*, { suspense: true }*/)
+	useEffect(() => {
+		const setRandomJoke = () => {
+			if (!jokes?.length) return
+			const joke = jokeApi.getRandomJoke(jokes)
+			const redditJoke = joke?.data
 
-	// useEffect(() => {
-	// 	const setRandomJoke = () => {
-	// 		if (!jokes) return
-	// 		const joke = jokeApi.getRandomJoke(jokes)
-	// 		const redditJoke = joke?.data
+			setRefresh(shouldRefresh => !shouldRefresh)
+			setRedditJoke(redditJoke)
+		}
 
-	// 		setRefresh(shouldRefresh => !shouldRefresh)
-	// 		setRedditJoke(redditJoke)
-	// 	}
-
-	// 	if (jokes?.length && (!redditJoke || shouldRefresh)) setRandomJoke()
-	// }, [jokes, setRedditJoke, shouldRefresh])
+		if (jokes?.length && (!redditJoke || shouldRefresh)) setRandomJoke()
+	}, [jokes, redditJoke, shouldRefresh])
 
 
 	const { title, selftext, url } = redditJoke ?? JOKE_FALLBACK

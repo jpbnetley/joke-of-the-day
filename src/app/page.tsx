@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic'
 
 import LoadingCard from 'app/components/cards/loading-card'
 import ErrorBoundary from 'app/components/error-boundary/ErrorBoundary'
-
+// TODO: suspense not working
 const Board = dynamic(() => import('app/components/Board'), {
 	loading: () => <LoadingCard />
 })
@@ -19,7 +19,6 @@ export default function Home() {
 			<header className={styles.AppHeader}>
         Random jokes from Reddit
 			</header>
-			
 			<div className={styles.PageContainer}>
 			<ErrorBoundary>
 				<Suspense fallback={<LoadingCard />}>
