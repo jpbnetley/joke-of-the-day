@@ -1,8 +1,10 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 
 // import * as jokeApi from 'api'
-import Joke from 'components/joke'
-import Card from 'components/cards/card'
+import Joke from 'app/components/joke'
+import Card from 'app/components/cards/card'
 import getJokes from 'utils/get-data/jokes'
 import { RedditJoke } from 'types/models/reddit'
 import useGetData from 'utils/promises/useGetData'

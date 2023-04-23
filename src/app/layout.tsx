@@ -1,4 +1,4 @@
-import TopBar from 'components/top-bar'
+import TopBar from 'app/components/top-bar'
 import './globals.css'
 
 export const metadata = {

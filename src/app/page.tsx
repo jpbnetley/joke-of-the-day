@@ -4,10 +4,10 @@ import { Toaster } from 'react-hot-toast'
 import {  Suspense } from 'react'
 import dynamic from 'next/dynamic'
 
-import LoadingCard from 'components/cards/loading-card'
-import ErrorBoundary from 'components/error-boundary/ErrorBoundary'
+import LoadingCard from 'app/components/cards/loading-card'
+import ErrorBoundary from 'app/components/error-boundary/ErrorBoundary'
 
-const Board = dynamic(() => import('components/Board'), {
+const Board = dynamic(() => import('app/components/Board'), {
 	loading: () => <LoadingCard />
 })
 
