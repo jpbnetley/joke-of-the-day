@@ -9,30 +9,32 @@ import Card from 'app/components/cards/card'
 import getJokes from 'utils/get-data/jokes'
 import { RedditJoke } from 'types/models/reddit'
 import useGetData from 'utils/promises/useGetData'
+import useIsMounted from 'utils/hooks/useIsMounted'
 
 const JOKE_FALLBACK: RedditJoke = {title: '', selftext: '', url: ''}
 
 
 const Board = () => {
+	const isMounted = useIsMounted()
 	const [shouldRefresh, setRefresh] = useState<boolean>(false)
 	const [redditJoke, setRedditJoke] = useState<RedditJoke>()
 
 	const handleRefreshJokeClick = () => setRefresh(shouldRefresh => !shouldRefresh)
 
-	const { data: jokes } = useGetData('jokes', getJokes, { suspense: true, fallbackData: [] } satisfies SWRConfiguration)
+	const { data: jokes } = useGetData('jokes', getJokes, { suspense: true } satisfies SWRConfiguration)
 
 	useEffect(() => {
 		const setRandomJoke = () => {
-			if (!jokes?.length) return
 			const joke = jokeApi.getRandomJoke(jokes)
 			const redditJoke = joke?.data
-
-			setRefresh(shouldRefresh => !shouldRefresh)
-			setRedditJoke(redditJoke)
+			if (isMounted) {
+				setRefresh(shouldRefresh => !shouldRefresh)
+				setRedditJoke(redditJoke)
+			}
 		}
 
 		if (jokes?.length && (!redditJoke || shouldRefresh)) setRandomJoke()
-	}, [jokes, redditJoke, shouldRefresh])
+	}, [isMounted, jokes, redditJoke, shouldRefresh])
 
 
 	const { title, selftext, url } = redditJoke ?? JOKE_FALLBACK

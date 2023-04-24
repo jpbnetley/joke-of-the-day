@@ -21,9 +21,9 @@ export default function Home() {
 			</header>
 			<div className={styles.PageContainer}>
 			<ErrorBoundary>
-				<Suspense fallback={<LoadingCard />}>
+				{/* <Suspense fallback={<LoadingCard />}> */}
 					<Board />
-				</Suspense>
+				{/* </Suspense> */}
 			</ErrorBoundary>
 			<Toaster position="top-right"/>
 			</div>

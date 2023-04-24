@@ -3,9 +3,11 @@ import { RedditJokeResponse } from 'types/models/reddit'
 
 
 // TODO: check fetch data handler
-
-const getJokes = async () => {
-	const jokesJson = await jokeApi.getJokesAsJson()
+type Props = {
+	signal?: AbortSignal
+}
+const getJokes = async ({signal}: Props) => {
+	const jokesJson = await jokeApi.getJokesAsJson(signal)
 	const jokes = jokesJson.data.children
 
 	return jokes satisfies RedditJokeResponse[]

@@ -1,8 +1,12 @@
 import toast from 'react-hot-toast'
 
-const swrFetcher = async <T>(getData: () => Promise<T>) => {
+export type GetDataProps = {
+	signal?:AbortSignal
+}
 
-	const fetchingPromise = getData()
+const swrFetcher = async <T>(getData: ({signal}: GetDataProps) => Promise<T>, signal?: AbortSignal) => {
+
+	const fetchingPromise = getData({signal})
 
 	toast.promise(fetchingPromise, {
 		loading: 'Getting jokes',
