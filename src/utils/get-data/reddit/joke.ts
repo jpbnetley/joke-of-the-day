@@ -6,13 +6,9 @@ const URL = 'https://www.reddit.com/r/Jokes/.json'
  * Requests a joke from the url
  */
 export const getJokesAsJson = async (signal?: AbortSignal) => {
-	try {
 		const jokes = await fetch(URL, { signal })
 		const jokeJson = await jokes.json()
 		return jokeJson
-	} catch (error) {
-		console.error('could not fetch jokes from: ', URL, error)
-	}
 }
 
 /**

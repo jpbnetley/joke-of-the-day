@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic'
 
 import LoadingCard from 'app/components/cards/loading-card'
 import ErrorBoundary from 'app/components/error-boundary/ErrorBoundary'
-// TODO: suspense not working
+// TODO: suspense not working https://swr.vercel.app/docs/suspense#server-side-rendering
 const Board = dynamic(() => import('app/components/Board'), {
 	loading: () => <LoadingCard />
 })
@@ -21,9 +21,9 @@ export default function Home() {
 			</header>
 			<div className={styles.PageContainer}>
 			<ErrorBoundary>
-				{/* <Suspense fallback={<LoadingCard />}> */}
+				<Suspense fallback={<LoadingCard />}>
 					<Board />
-				{/* </Suspense> */}
+				</Suspense>
 			</ErrorBoundary>
 			<Toaster position="top-right"/>
 			</div>
