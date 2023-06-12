@@ -57,7 +57,6 @@ jobs:
         uses: cycjimmy/semantic-release-action@v3
         id: semantic
         with:
-          semantic_version: 19.0.5
           branch: |
             [
               'main',
@@ -66,10 +65,6 @@ jobs:
                 prerelease: true
               }
             ]
-          extra_plugins: |
-           @semantic-release/commit-analyzer
-           @semantic-release/release-notes-generator
-           @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
