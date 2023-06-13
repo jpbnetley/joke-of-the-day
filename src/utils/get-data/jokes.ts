@@ -1,14 +1,11 @@
-import * as jokeApi from 'utils/get-data/reddit/joke'
+import * as jokeApi from 'api/joke'
+import { RedditJokeResponse } from 'types/models/reddit'
 
-type Props = {
-	signal?: AbortSignal
-}
-const getJokes = async (props?: Props) => {
-  const { signal } = props ?? {}
-  const jokesJson = await jokeApi.getJokesAsJson(signal)
-  const jokes = jokesJson.data.children
+const getJokes = async () => {
+	const jokesJson = await jokeApi.getJokesAsJson()
+	const jokes = jokesJson.data.children
 
-  return jokes
+	return jokes as RedditJokeResponse[]
 }
 
 export default getJokes
