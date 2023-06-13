@@ -38,10 +38,18 @@ jobs:
     - name: Build
       run: pnpm run build
 
-    - name: Deploy
+    - name: Deploy prod
+      if: github.ref == 'refs/heads/master'
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages
+        branch: gh-pages-prod
+        folder: dist
+
+    - name: Deploy dev
+      if: github.ref == 'refs/heads/dev'
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages-dev
         folder: dist
         
   github-release:
