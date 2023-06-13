@@ -12,7 +12,6 @@ on:
 
 env:
   node_version: 18
-  HUSKY: 0
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
