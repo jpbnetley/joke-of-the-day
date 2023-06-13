@@ -1,32 +1,32 @@
 'use client'
 
 import { Toaster } from 'react-hot-toast'
-import {  Suspense } from 'react'
 import dynamic from 'next/dynamic'
 
 import LoadingCard from 'app/components/cards/loading-card'
 import ErrorBoundary from 'app/components/error-boundary/ErrorBoundary'
-// TODO: suspense not working https://swr.vercel.app/docs/suspense#server-side-rendering
-const Board = dynamic(() => import('app/components/Board'), {
-	loading: () => <LoadingCard />
-})
 
 import styles from './page.module.css'
+import Header from './components/header'
+// TODO: suspense not working https://swr.vercel.app/docs/suspense#server-side-rendering
+const Board = dynamic(() => import('app/components/Board'), {
+  loading: () => <LoadingCard />
+})
 
-export default function Home() {
+ const Home = async () => {
 	return (
-		<main className={styles.MainContainer}>
-			<header className={styles.AppHeader}>
-        Random jokes from Reddit
-			</header>
+	<main className={styles.MainContainer}>
+			<Header text='Random jokes from Reddit'/>
 			<div className={styles.PageContainer}>
 			<ErrorBoundary>
-				<Suspense fallback={<LoadingCard />}>
+				{/* <Suspense fallback={<LoadingCard />}> */}
 					<Board />
-				</Suspense>
+				{/* </Suspense> */}
 			</ErrorBoundary>
 			<Toaster position="top-right"/>
 			</div>
 		</main>
-	)
+  )
 }
+
+export default Home

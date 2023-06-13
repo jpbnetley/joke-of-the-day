@@ -1,5 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# // TODO: Add back lint staged
-# pnpm dlx lint-staged
+pnpm dlx lint-staged

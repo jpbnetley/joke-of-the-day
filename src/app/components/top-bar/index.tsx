@@ -1,6 +1,6 @@
-import { Children, ReactNode } from "react"
+import { ReactNode } from 'react'
 
-export type TopBarProps  = {
+export type TopBarProps = {
   children: ReactNode
 }
 const TopBar = () => {

@@ -9,22 +9,22 @@ type Props = {
 } & PropsWithChildren
 
 const Joke = ({ title, joke, link }: Props) => {
-	if (!(title && joke && link)) return <p></p>
+  if (!(title && joke && link)) return <p></p>
 
-	return (
+  return (
 		<div>
 			<h1>{title}</h1>
 			<p>{joke}</p>
-			<a 
-			className={style.link} 
-			target="_blank" 
-			rel="noopener noreferrer"
-			href={link}
-			 >
+			<a
+				className={style.link}
+				target="_blank"
+				rel="noopener noreferrer"
+				href={link}
+			>
         source
 			</a>
 		</div>
-	)
+  )
 }
 
 export default Joke

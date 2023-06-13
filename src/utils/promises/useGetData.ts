@@ -4,22 +4,22 @@ import type { SWRConfiguration } from 'swr'
 
 import swrFetcher, { GetDataProps } from 'utils/promises/swr-fetcher'
 
-const useGetData = <T>(key:string, fetcher: ({signal}: GetDataProps) => Promise<T>, config?: SWRConfiguration) => {
-	const abortRequest = useRef<AbortSignal | undefined>()
-	
-	useEffect(() => {
-		const abort = new AbortController()
-		abortRequest.current = abort?.signal
+const useGetData = <T>(key:string, fetcher: GetDataProps<T>, config?: SWRConfiguration) => {
+  const abortRequest = useRef<AbortSignal | undefined>()
 
-		return () => {
-			abort.abort()
-		}
-	}, [])
+  useEffect(() => {
+    const abort = new AbortController()
+    abortRequest.current = abort?.signal
 
-	const promiseWrapper = () => swrFetcher(fetcher, abortRequest.current)
-	const swrResult = useSWR(key, promiseWrapper, config)
+    return () => {
+      abort.abort()
+    }
+  }, [])
 
-	return swrResult
+  const promiseWrapper = () => swrFetcher(fetcher, abortRequest.current)
+  const swrResult = useSWR(key, promiseWrapper, config)
+
+  return swrResult
 }
 
 export default useGetData
