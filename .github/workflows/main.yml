@@ -12,6 +12,7 @@ on:
 
 env:
   node_version: 18
+  HUSKY_SKIP_INSTALL: 1
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
