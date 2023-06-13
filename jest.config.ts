@@ -1,10 +1,10 @@
-import type { Config } from '@jest/types'
+import type { Config } from 'jest'
 
-const config: Config.InitialOptions = {
+const config: Config = {
 	preset: 'ts-jest',
-	testEnvironment: 'node',
 	verbose: true,
 	automock: true,
 	testPathIgnorePatterns: ['./node_modules/'],
+
 }
 export default config
