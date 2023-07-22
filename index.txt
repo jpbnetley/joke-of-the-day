@@ -1,10 +1,10 @@
 1:HL["/_next/static/css/4e75b1677fdae68d.css",{"as":"style"}]
-0:["Phm-xs39FqHYxlp53FtKR",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4e75b1677fdae68d.css","precedence":"next"}]],"$L3"]]]]
+0:["2g12xUDfcBHcDCpoIRgq8",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/4e75b1677fdae68d.css","precedence":"next"}]],"$L3"]]]]
 4:HL["/_next/static/css/6bc262780b7255a5.css",{"as":"style"}]
-5:I{"id":5904,"chunks":["272:static/chunks/webpack-f36e37433bbe15ef.js","568:static/chunks/a6a31439-45de44871b27442c.js","875:static/chunks/875-520fe2220ff818a5.js"],"name":"default","async":false}
-6:I{"id":2982,"chunks":["601:static/chunks/app/error-5aeda56e87081547.js"],"name":"","async":false}
-7:I{"id":5719,"chunks":["272:static/chunks/webpack-f36e37433bbe15ef.js","568:static/chunks/a6a31439-45de44871b27442c.js","875:static/chunks/875-520fe2220ff818a5.js"],"name":"default","async":false}
-8:I{"id":4104,"chunks":["272:static/chunks/webpack-f36e37433bbe15ef.js","568:static/chunks/a6a31439-45de44871b27442c.js","875:static/chunks/875-520fe2220ff818a5.js"],"name":"default","async":false}
-9:I{"id":5677,"chunks":["931:static/chunks/app/page-d05a149a2504d721.js"],"name":"","async":false}
+5:I{"id":4922,"chunks":["272:static/chunks/webpack-642817b0a325151d.js","549:static/chunks/16ca6610-26605dcdace79a7f.js","506:static/chunks/506-83ce2673fd272f3f.js"],"name":"default","async":false}
+6:I{"id":7369,"chunks":["601:static/chunks/app/error-504f1450e09e2957.js"],"name":"","async":false}
+7:I{"id":4190,"chunks":["272:static/chunks/webpack-642817b0a325151d.js","549:static/chunks/16ca6610-26605dcdace79a7f.js","506:static/chunks/506-83ce2673fd272f3f.js"],"name":"default","async":false}
+8:I{"id":7741,"chunks":["272:static/chunks/webpack-642817b0a325151d.js","549:static/chunks/16ca6610-26605dcdace79a7f.js","506:static/chunks/506-83ce2673fd272f3f.js"],"name":"default","async":false}
+9:I{"id":2735,"chunks":["931:static/chunks/app/page-9c7f53df08e68147.js"],"name":"","async":false}
 2:[["$","html",null,{"lang":"en","children":["$","body",null,{"children":[["$","div",null,{"children":"Top bar"}],["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$6","errorStyles":[],"loading":["$","div",null,{"className":"styles_center__iMzk9","children":["$","div",null,{"className":"styles_loader__AjX8h"}]}],"loadingStyles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/54398d648074a33d.css","precedence":"$undefined"}]],"hasLoading":true,"template":["$","$L7",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","$L8",null,{"propsForComponent":{"params":{}},"Component":"$9"}],null],"segment":"__PAGE__"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6bc262780b7255a5.css","precedence":"next"}]]}]]}]}],null]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Joke of the day"}],["$","meta","2",{"name":"description","content":"Finds random jokes form reddit"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}]]
