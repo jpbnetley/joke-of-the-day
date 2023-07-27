@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ReactNode } from 'react'
 
 export type TopBarProps = {
@@ -6,7 +7,9 @@ export type TopBarProps = {
 const TopBar = () => {
   return (
     <div>
-      Top bar
+      <Link href='https://www.reddit.com/r/jokes'>
+        Reddit
+      </Link>
     </div>
   )
 }
