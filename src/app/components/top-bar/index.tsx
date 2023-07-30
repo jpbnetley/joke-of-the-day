@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import styles from './styles.module.css'
 
 export type TopBarProps = {
   children: ReactNode
@@ -7,8 +8,8 @@ export type TopBarProps = {
 const TopBar = () => {
   return (
     <div>
-      <Link href='https://www.reddit.com/r/jokes'>
-        Reddit
+      <Link href='https://www.reddit.com/r/jokes' className={styles.link}>
+        Reddit jokes
       </Link>
     </div>
   )

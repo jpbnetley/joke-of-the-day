@@ -13,7 +13,7 @@ const Board = dynamic(() => import('app/components/Board'), {
   loading: () => <LoadingCard />
 })
 
- const Home = async () => {
+ const Home = () => {
 	return (
 	<main className={styles.MainContainer}>
 			<Header text='Random jokes from Reddit'/>
