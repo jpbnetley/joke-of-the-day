@@ -21,7 +21,7 @@ const Board = dynamic(() => import('app/components/Board'), {
 			<ErrorBoundary>
 				{/* <Suspense fallback={<LoadingCard />}> */}
 					<Board />
-					c
+					d
 				{/* </Suspense> */}
 			</ErrorBoundary>
 			<Toaster position="top-right"/>
