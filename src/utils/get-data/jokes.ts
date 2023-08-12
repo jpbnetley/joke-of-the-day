@@ -1,6 +1,6 @@
 import * as jokeApi from 'utils/get-data/reddit/joke'
 
-type Props = {
+export type Props = {
 	signal?: AbortSignal
 }
 const getJokes = async (props?: Props) => {

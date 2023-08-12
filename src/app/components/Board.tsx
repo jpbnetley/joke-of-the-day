@@ -24,7 +24,7 @@ const Board = ({ fallbackData }: BoardProps) => {
     data: jokes, 
     isLoading, 
     mutate 
-  } = useGetData('jokes', getJokes, { /*suspense: true,*/ fallbackData } satisfies SWRConfiguration)
+  } = useGetData('jokes', getJokes, { /*suspense: true,*/ fallbackData } satisfies SWRConfiguration<RedditJokeResponse[]>)
 
   const handleHardRefresh = () => mutate()
 
@@ -47,6 +47,7 @@ const Board = ({ fallbackData }: BoardProps) => {
   if (!redditJoke) return null
 
   const { title, selftext, url } = redditJoke
+ 
   return (
 		<Card>
 			<Joke title={title} joke={selftext} link={url} />
