@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "start:export":"pnpm dlx serve@latest dist",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "test": "jest --passWithNoTests",
