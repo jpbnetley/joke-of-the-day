@@ -117,5 +117,5 @@ button {
 
 button:hover {
   background-color: #3b9f16;
-  box-shadow: 0.2em 0.7em rgb(59, 60, 59);
+  box-shadow: 0.2em 0.3em rgb(59, 60, 59);
 }

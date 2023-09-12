@@ -1,7 +1,7 @@
 .AppHeader {
   background-color: #282c34;
-  min-height: 10svh;
-  font-size: calc(10px + 2vmin);
+  min-height: 5vh;
+  font-size: clamp(2em, 400px, 3vmin);
   color: white;
   text-align: center;
 }

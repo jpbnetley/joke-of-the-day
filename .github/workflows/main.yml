@@ -27,7 +27,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: pnpm/action-setup@v2
       with:
         version: latest
@@ -38,7 +38,7 @@ jobs:
         cache: 'pnpm'
     - run: pnpm install --prod
 
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install Vercel CLI
       run: npm install --global vercel@latest
     - name: Pull Vercel Environment Information [prod]
@@ -72,7 +72,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
 

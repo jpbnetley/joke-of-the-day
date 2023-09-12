@@ -1,4 +1,14 @@
 .link {
   font-size: 2em;
   color: red;
+  transition-property: font-size, font-weight;  
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.4);
+  transition-delay: 0s;
+}
+
+.link:hover {
+  font-size: 2.3em;
+  font-weight: bold;
+  position: absolute;
 }

@@ -1,9 +1,10 @@
 import { ReactNode} from 'react'
+import { Metadata } from 'next'
 
 import TopBar from 'app/components/top-bar'
 import './globals.css'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Joke of the day',
   description: 'Finds random jokes form reddit'
 }

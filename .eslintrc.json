@@ -12,6 +12,10 @@
   },
   "parserOptions": { "project": ["./tsconfig.json"] },
     "plugins": [
-        "@typescript-eslint"
-    ]
+        "@typescript-eslint",
+        "jest"
+    ],
+    "env": {
+      "jest/globals": true
+    }
 }
