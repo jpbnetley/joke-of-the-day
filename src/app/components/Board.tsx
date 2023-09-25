@@ -3,13 +3,13 @@
 import { useEffect, useState } from 'react'
 import { SWRConfiguration } from 'swr'
 
-import * as jokeApi from 'utils/get-data/reddit/joke'
-import Joke from 'app/components/joke'
-import Card from 'app/components/cards/card'
-import getJokes from 'utils/get-data/jokes'
-import { RedditJoke, RedditJokeResponse } from 'types/models/reddit'
-import useGetData from 'utils/promises/useGetData'
-import useIsMounted from 'utils/hooks/useIsMounted'
+import * as jokeApi from 'utils/get-data/reddit/joke.ts'
+import Joke from 'app/components/joke/index.tsx'
+import Card from 'app/components/cards/card/index.tsx'
+import getJokes from 'utils/get-data/jokes.ts'
+import { RedditJoke, RedditJokeResponse } from 'types/models/reddit.ts'
+import useGetData from 'utils/promises/useGetData.ts'
+import useIsMounted from 'utils/hooks/useIsMounted.tsx'
 
 export interface BoardProps {
   fallbackData?: RedditJokeResponse[]
