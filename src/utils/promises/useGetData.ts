@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import useSWR from 'swr'
 import type { SWRConfiguration } from 'swr'
 
-import swrFetcher, { GetDataProps } from 'utils/promises/swr-fetcher'
+import swrFetcher, { GetDataProps } from 'utils/promises/swr-fetcher.ts'
 
 const useGetData = <T>(key:string, fetcher: GetDataProps<T>, config?: SWRConfiguration) => {
   const abortRequest = useRef<AbortSignal | undefined>()
