@@ -1,4 +1,4 @@
-import * as jokeApi from 'utils/get-data/reddit/joke.ts'
+import * as jokeApi from 'utils/get-data/reddit/joke'
 
 export type Props = {
 	signal?: AbortSignal

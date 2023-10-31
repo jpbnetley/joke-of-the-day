@@ -3,14 +3,14 @@
 import { Toaster } from 'react-hot-toast'
 import dynamic from 'next/dynamic'
 
-import LoadingCard from 'app/components/cards/loading-card/index.tsx'
-import ErrorBoundary from 'app/components/error-boundary/ErrorBoundary.tsx'
+import LoadingCard from 'app/components/cards/loading-card/index'
+import ErrorBoundary from 'app/components/error-boundary/ErrorBoundary'
 
 import styles from './page.module.css'
-import Header from './components/header/index.tsx'
-import { getJokesAsJson } from 'utils/get-data/reddit/joke.ts'
+import Header from './components/header/index'
+import { getJokesAsJson } from 'utils/get-data/reddit/joke'
 // TODO: suspense not working https://swr.vercel.app/docs/suspense#server-side-rendering
-const Board = dynamic(() => import('app/components/Board.tsx'), {
+const Board = dynamic(() => import('app/components/Board'), {
   loading: () => <LoadingCard />
 })
 

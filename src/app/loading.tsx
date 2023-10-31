@@ -1,4 +1,4 @@
-import Loader from "./components/loader/index.tsx"
+import Loader from "./components/loader/index"
 
 const LoadingPage = () => <><Loader /></>
 
