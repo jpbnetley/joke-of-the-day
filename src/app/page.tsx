@@ -8,7 +8,7 @@ import ErrorBoundary from 'app/components/error-boundary/ErrorBoundary'
 
 import styles from './page.module.css'
 import Header from './components/header/index'
-import { getJokesAsJson } from '../utils/get-data/reddit/joke'
+import { getJokesAsJson } from 'utils/get-data/reddit/joke'
 // TODO: suspense not working https://swr.vercel.app/docs/suspense#server-side-rendering
 const Board = dynamic(() => import('app/components/Board'), {
   loading: () => <LoadingCard />
