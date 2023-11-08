@@ -1,18 +1,14 @@
-
-
+import { Suspense } from 'react'
 import { Toaster } from 'react-hot-toast'
-import dynamic from 'next/dynamic'
 
 import LoadingCard from 'app/components/cards/loading-card/index'
 import ErrorBoundary from 'app/components/error-boundary/ErrorBoundary'
+import Board from 'app/components/Board'
 
 import styles from './page.module.css'
 import Header from './components/header/index'
 import { getJokesAsJson } from 'utils/get-data/reddit/joke'
 // TODO: suspense not working https://swr.vercel.app/docs/suspense#server-side-rendering
-const Board = dynamic(() => import('app/components/Board'), {
-  loading: () => <LoadingCard />
-})
 
  const Home = async () => {
 	const data = await getJokesAsJson()
@@ -21,9 +17,9 @@ const Board = dynamic(() => import('app/components/Board'), {
 			<Header text='Random jokes from Reddit'/>
 			<div className={styles.PageContainer}>
 			<ErrorBoundary>
-				{/* <Suspense fallback={<LoadingCard />}> */}
+				<Suspense fallback={<LoadingCard />}>
 					<Board fallbackData={data.data.children}/>
-				{/* </Suspense> */}
+				</Suspense>
 			</ErrorBoundary>
 			<Toaster position="top-right"/>
 			</div>

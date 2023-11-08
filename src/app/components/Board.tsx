@@ -10,6 +10,7 @@ import getJokes from 'utils/get-data/jokes'
 import { RedditJoke, RedditJokeResponse } from 'types/models/reddit'
 import useGetData from 'utils/promises/useGetData'
 import useIsMounted from 'utils/hooks/useIsMounted'
+import LoadingCard from './cards/loading-card'
 
 export interface BoardProps {
   fallbackData?: RedditJokeResponse[]
@@ -24,11 +25,7 @@ const Board = ({ fallbackData }: BoardProps) => {
     data: jokes, 
     isLoading, 
     mutate 
-  } = useGetData('jokes', getJokes, { /*suspense: true,*/ fallbackData } satisfies SWRConfiguration<RedditJokeResponse[]>)
-
-  const handleHardRefresh = () => mutate()
-
-  const handleRefreshJokeClick = () => setRefresh(shouldRefresh => !shouldRefresh)
+  } = useGetData('jokes', getJokes, { suspense: true, fallbackData } satisfies SWRConfiguration<RedditJokeResponse[]>)
 
   useEffect(() => {
     const setRandomJoke = () => {
@@ -43,6 +40,12 @@ const Board = ({ fallbackData }: BoardProps) => {
 
     if (jokes?.length && (!redditJoke || shouldRefresh)) setRandomJoke()
   }, [isLoading, isMounted, jokes, redditJoke, shouldRefresh])
+
+  if (isLoading) return <LoadingCard />
+
+  const handleHardRefresh = () => mutate()
+
+  const handleRefreshJokeClick = () => setRefresh(shouldRefresh => !shouldRefresh)
 
   if (!redditJoke) return null
 
