@@ -70,6 +70,7 @@ jobs:
   github-release:
     needs: build-and-publish
     runs-on: ubuntu-latest
+    name: Generate Release notes
     steps:
       - name: Checkout
         uses: actions/checkout@v4
