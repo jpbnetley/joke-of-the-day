@@ -8,7 +8,6 @@ import Board from 'app/components/Board'
 import styles from './page.module.css'
 import Header from './components/header/index'
 import { getJokesAsJson } from 'utils/get-data/reddit/joke'
-// TODO: suspense not working https://swr.vercel.app/docs/suspense#server-side-rendering
 
  const Home = async () => {
 	const data = await getJokesAsJson()
