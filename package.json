@@ -1,74 +1,54 @@
 {
-  "homepage": "https://jpbnetley.github.io/joke-of-the-day",
   "name": "joke-of-the-day",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@types/node": "^18.14.1",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^3.1.0",
-    "i": "^0.3.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hot-toast": "^2.4.0",
-    "swr": "^2.0.3",
-    "vite": "^4.1.4",
-    "vitest": "^0.28.5",
-    "web-vitals": "^3.1.1"
+  "type": "module",
+  "engines": {
+    "node": ">=18"
   },
   "scripts": {
-    "clean": "rm -rf node_modules && rm pnpm-lock.yaml && pnpm i",
-    "start": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "test": "vitest --run",
-    "test:wa": "vitest -w",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "test": "jest --passWithNoTests",
+    "test:wa": "jest -w",
     "predeploy": "npm run build",
-    "prepare": "exit 0",
-    "lint": "eslint",
-    "lint:fix": "npm run lint . --fix"
+    "prepare": "husky install || exit 0",
+    "clean:next": "rm -rf .next",
+    "clean:node": "rm -rf node_modules",
+    "clean:build": "rm -rf dist",
+    "clean": "pnpm run clean:next && pnpm run clean:node && pnpm run clean:build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "eslint-config-next": "14.0.4",
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "swr": "^2.2.4",
+    "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.18.6",
-    "@types/jest": "^29.4.0",
-    "@typescript-eslint/eslint-plugin": "^5.53.0",
-    "@typescript-eslint/parser": "^5.53.0",
-    "eslint": "^8.34.0",
-    "eslint-plugin-react": "^7.32.2",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "eslint": "8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.6.0",
+    "eslint-plugin-n": "^16.4.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.5"
-  },
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ],
-  "plugins": [
-    [
-      "@babel/plugin-proposal-class-properties"
-    ]
-  ]
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lint-staged": "^15.2.0"
+  }
 }
