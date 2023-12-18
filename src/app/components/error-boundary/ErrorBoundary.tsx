@@ -1,3 +1,4 @@
+"use client"
 import { Component, ErrorInfo, ReactNode } from 'react'
 
 // src: https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/error_boundaries/

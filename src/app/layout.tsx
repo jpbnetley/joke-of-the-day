@@ -1,7 +1,7 @@
 import { ReactNode} from 'react'
 import { Metadata } from 'next'
 
-import TopBar from 'app/components/top-bar'
+import TopBar from 'app/components/top-bar/index'
 import './globals.css'
 
 export const metadata: Metadata = {

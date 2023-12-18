@@ -7,7 +7,8 @@ const URL = 'https://www.reddit.com/r/Jokes/.json'
  */
 export const getJokesAsJson = async (signal?: AbortSignal) => {
   const jokesResponse = await fetch(URL, { signal })
-  if (!jokesResponse.ok) throw new Error(jokesResponse.statusText)
+
+  if (!jokesResponse.ok) throw new Error(`status: ${jokesResponse.status} statusText: ${jokesResponse.statusText}`, { cause: 'reddit joke api' })
  
   return await jokesResponse.json() as RedditJsonResponse
 }
@@ -31,9 +32,9 @@ export const getRandomJokeIndex = (length: number): number => {
   const randomIndex = Math.round(Math.random() * 100)
   if (randomIndex > length && skipFirst2Jokes(randomIndex)) {
     return getRandomJokeIndex(length)
-  } else {
-    return randomIndex
   }
+  
+  return randomIndex
 }
 
 /**
