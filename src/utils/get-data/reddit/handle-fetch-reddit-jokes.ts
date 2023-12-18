@@ -1,8 +1,9 @@
 import { getJokesAsJson } from "./joke"
 
 /**
- * fetches the reddit jokes, and on error - returns an empty joke list
- * @returns reddit hokes
+ * fetches the reddit jokes, if the reddit joke api returns an error,
+ * an empty joke list is returned
+ * @returns reddit jokes
  */
 export const handleFetchRedditJokes = async () =>  {
   try {
