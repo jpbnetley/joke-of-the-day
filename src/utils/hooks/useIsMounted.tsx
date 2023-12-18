@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-const useIsMounted = () => {
+const useIsMounted = (): boolean => {
   const isMounted = useRef<boolean>(false)
 
   useEffect(() => {

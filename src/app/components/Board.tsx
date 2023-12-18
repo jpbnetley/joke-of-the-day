@@ -10,7 +10,7 @@ import getJokes from 'utils/get-data/jokes'
 import { RedditJoke, RedditJokeResponse } from 'types/models/reddit'
 import useGetData from 'utils/promises/useGetData'
 import useIsMounted from 'utils/hooks/useIsMounted'
-import * as jokeApi from 'utils/get-data/reddit/joke'
+import { getRandomJoke } from 'utils/get-data/reddit/joke'
 
 export interface BoardProps {
   fallbackData?: RedditJokeResponse[]
@@ -30,7 +30,8 @@ const Board = ({ fallbackData }: BoardProps) => {
   useEffect(() => {
     const setRandomJoke = () => {
       if (isLoading || !jokes) return
-      const joke = jokeApi.getRandomJoke(jokes)
+      
+      const joke = getRandomJoke(jokes)
       const redditJoke = joke?.data
       if (isMounted) {
         setRefresh(shouldRefresh => !shouldRefresh)

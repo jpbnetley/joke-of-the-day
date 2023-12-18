@@ -14,7 +14,7 @@ export interface RedditJsonResponse {
   data: {
     after: string
     before: null
-    children:RedditJokeResponse[]
+    children: RedditJokeResponse[]
     dist: number
     geo_filter: any
     modhash: string
