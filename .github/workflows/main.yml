@@ -117,7 +117,7 @@ jobs:
         
   github-release:
     needs: [build-and-publish-production, build-and-publish-develop]
-    if: needs.build-and-publish-production.outputs.build == 'success' || needs.build-and-publish-develop.outputs.build == 'success'
+    if: always() && (needs.build-and-publish-production.outputs.build == 'success' || needs.build-and-publish-develop.outputs.build == 'success')
     runs-on: ubuntu-latest
     name: Generate Release Notes
     steps:
