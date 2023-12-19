@@ -110,7 +110,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: log
-        run: echo "${{ needs.build-and-publish-develop.outputs.build }}"
+        run: |
+       echo dev "${{ needs.build-and-publish-develop.outputs.build }}"
+       echo prod "${{ needs.build-and-publish-production.outputs.build }}"
         
   github-release:
     needs: [build-and-publish-production, build-and-publish-develop]
