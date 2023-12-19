@@ -1,9 +1,9 @@
 import {getJokesAsJson}from 'utils/get-data/reddit/joke'
 
-export type Props = {
+export type JokeConfig = {
 	signal?: AbortSignal
 }
-const getJokes = async (props?: Props) => {
+const getJokes = async (props?: JokeConfig) => {
   const { signal } = props ?? {}
   const jokesJson = await getJokesAsJson(signal)
   const jokes = jokesJson.data.children
