@@ -107,6 +107,7 @@ jobs:
 
   debug:
     needs:  [build-and-publish-production, build-and-publish-develop]
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
       - name: log
