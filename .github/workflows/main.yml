@@ -63,7 +63,7 @@ jobs:
 
     - id: success
       if: success()
-      run: echo "{buildStatus}={success}" >> $GITHUB_OUTPUT
+      run: echo "buildStatus=success" >> $GITHUB_OUTPUT
       
   build-and-publish-develop:
     name: Build and publish develop
@@ -103,7 +103,7 @@ jobs:
 
     - id: success
       if: success()
-      run: echo "{buildStatus}={success}" >> $GITHUB_OUTPUT
+      run: echo "buildStatus=success" >> $GITHUB_OUTPUT
 
   debug:
     needs:  build-and-publish-develop
