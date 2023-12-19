@@ -106,13 +106,13 @@ jobs:
       run: echo "buildStatus=success" >> $GITHUB_OUTPUT
 
   debug:
-    needs:  build-and-publish-develop
+    needs:  [build-and-publish-production, build-and-publish-develop]
     runs-on: ubuntu-latest
     steps:
       - name: log
         run: |
-       echo dev "${{ needs.build-and-publish-develop.outputs.build }}"
-       echo prod "${{ needs.build-and-publish-production.outputs.build }}"
+          echo dev "${{ needs.build-and-publish-develop.outputs.build }}"
+          echo prod "${{ needs.build-and-publish-production.outputs.build }}"
         
   github-release:
     needs: [build-and-publish-production, build-and-publish-develop]
