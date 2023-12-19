@@ -26,6 +26,7 @@ jobs:
   # This workflow contains a single job called "install"
   
   build-and-publish-production:
+    name: Build and publish production
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
@@ -65,6 +66,7 @@ jobs:
       run: echo "{buildStatus}={success}" >> $GITHUB_OUTPUT
       
   build-and-publish-develop:
+    name: Build and publish develop
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/dev'
     outputs:
@@ -102,6 +104,13 @@ jobs:
     - id: success
       if: success()
       run: echo "{buildStatus}={success}" >> $GITHUB_OUTPUT
+
+  debug:
+    needs:  build-and-publish-develop
+    runs-on: ubuntu-latest
+    steps:
+      - name: log
+        run: echo "${{ needs.build-and-publish-develop.outputs.build }}"
         
   github-release:
     needs: [build-and-publish-production, build-and-publish-develop]
