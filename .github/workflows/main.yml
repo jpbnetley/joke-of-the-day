@@ -62,7 +62,7 @@ jobs:
 
     - id: success
       if: success()
-      run: echo "::set-output name=buildStatus::success"
+      run: echo "{buildStatus}={success}" >> $GITHUB_OUTPUT
       
   build-and-publish-develop:
     runs-on: ubuntu-latest
@@ -101,7 +101,7 @@ jobs:
 
     - id: success
       if: success()
-      run: echo "::set-output name=buildStatus::success"
+      run: echo "{buildStatus}={success}" >> $GITHUB_OUTPUT
         
   github-release:
     needs: [build-and-publish-production, build-and-publish-develop]
