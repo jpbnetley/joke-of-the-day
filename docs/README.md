@@ -22,17 +22,24 @@ pnpm i
 ```
 
 ### Running the project
+#### dev
+```bash
+pnpm run dev
+```
 
+#### Production
+
+Build for production:
+```bash
+pnpm run build
+```
+Start production build
 ```bash
 pnpm run start
 ```
 
-### External packages
-
-- <a href="https://react-hot-toast.com/docs" target="_blank">react-hot-toast</a>
-
 ## Deployed site:
-
-https://jpbnetley.github.io/joke-of-the-day
+- [Production](https://joke-of-the-day-prod.vercel.app)
+- [Dev](https://joke-of-the-day-dev.vercel.app)
 
 ## [Additional resources](./RESOURCES.md)
