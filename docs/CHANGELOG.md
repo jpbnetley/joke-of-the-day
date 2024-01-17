@@ -1,3 +1,10 @@
+# [1.1.0-dev.73](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.72...v1.1.0-dev.73) (2024-01-17)
+
+
+### Bug Fixes
+
+* clean up css for page ([455e642](https://github.com/jpbnetley/joke-of-the-day/commit/455e642c7afcb64a2028928a5923efa1793821a6))
+
 # [1.1.0-dev.72](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.71...v1.1.0-dev.72) (2024-01-16)
 
 
