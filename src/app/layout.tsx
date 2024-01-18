@@ -9,11 +9,13 @@ export const metadata: Metadata = {
   description: 'Finds random jokes form reddit'
 }
 
+export type RootLayoutType = {
+  children: ReactNode
+}
+
 export default function RootLayout ({
   children
-}: {
-  children: ReactNode
-}) {
+}: RootLayoutType) {
   return (
 		<html lang="en">
 			<body>

@@ -6,15 +6,15 @@ import ErrorBoundary from 'app/components/error-boundary/index'
 import Board from 'app/components/board'
 import { handleFetchRedditJokes } from 'utils/get-data/reddit/handle-fetch-reddit-jokes'
 import styles from './page.module.css'
-import Header from './components/header/index'
+import PageHeader from './components/page-header/index'
 
  const Home = async () => {
 	const redditJokes = await handleFetchRedditJokes()
 	
 	return (
-	<main className={styles.MainContainer}>
-			<Header text='Random jokes from Reddit'/>
-			<div className={styles.PageContainer}>
+	<main>
+			<PageHeader text='Random jokes from Reddit'/>
+			<div className={styles.mainContainer}>
 			<ErrorBoundary>
 				<Suspense fallback={<LoadingCard />}>
 					<Board fallbackData={redditJokes}/>

@@ -6,9 +6,9 @@ export interface HeaderProps {
 }
 
 const Header = ({ text }: HeaderProps) => (
-  <header className={styles.AppHeader}>
-        {text}
-			</header>
+  <h1 className={styles.appHeader}>
+    {text}
+  </h1>
 )
 
 export default Header
