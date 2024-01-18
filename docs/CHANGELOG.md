@@ -1,3 +1,10 @@
+# [1.1.0-dev.75](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.74...v1.1.0-dev.75) (2024-01-18)
+
+
+### Bug Fixes
+
+* cleanup css modules; fix card styles ([06ef1fc](https://github.com/jpbnetley/joke-of-the-day/commit/06ef1fc87cb46058f6183f188dd0c82b296ed08f))
+
 # [1.1.0-dev.74](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.73...v1.1.0-dev.74) (2024-01-17)
 
 
