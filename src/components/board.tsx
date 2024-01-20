@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react'
 import { SWRConfiguration } from 'swr'
 
-import Joke from 'app/components/joke/index'
-import Card from 'app/components/cards/card/index'
-import LoadingCard from 'app/components/cards/loading-card'
+import Joke from 'components/joke/index'
+import Card from 'components/cards/card/index'
+import LoadingCard from 'components/cards/loading-card'
 import getJokes from 'utils/get-data/jokes'
 import { RedditJoke, RedditJokeResponse } from 'types/models/reddit'
 import useGetData from 'utils/promises/useGetData'
