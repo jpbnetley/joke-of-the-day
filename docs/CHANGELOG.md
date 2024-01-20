@@ -1,3 +1,10 @@
+# [1.1.0-dev.77](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.76...v1.1.0-dev.77) (2024-01-20)
+
+
+### Features
+
+* moved components to root folder out of app folder ([faac22c](https://github.com/jpbnetley/joke-of-the-day/commit/faac22c6c66d966f694c5af7b98366a07a042414))
+
 # [1.1.0-dev.76](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.75...v1.1.0-dev.76) (2024-01-19)
 
 
