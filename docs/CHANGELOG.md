@@ -1,3 +1,10 @@
+# [1.1.0-dev.82](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.81...v1.1.0-dev.82) (2024-01-28)
+
+
+### Bug Fixes
+
+* installed prettier ([12aef60](https://github.com/jpbnetley/joke-of-the-day/commit/12aef60ea0049e3d08db73d0b105fb0c834f490e))
+
 # [1.1.0-dev.81](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.80...v1.1.0-dev.81) (2024-01-28)
 
 
