@@ -20,21 +20,24 @@ const Board = ({ fallbackData }: BoardProps) => {
   const isMounted = useIsMounted()
   const [shouldRefresh, setRefresh] = useState<boolean>(false)
   const [redditJoke, setRedditJoke] = useState<RedditJoke>()
-  
-  const { 
-    data: jokes, 
-    isLoading, 
-    mutate 
-  } = useGetData('jokes', getJokes, { suspense: true, fallbackData } satisfies SWRConfiguration<RedditJokeResponse[]>)
+
+  const {
+    data: jokes,
+    isLoading,
+    mutate
+  } = useGetData('jokes', getJokes, {
+    suspense: true,
+    fallbackData
+  } satisfies SWRConfiguration<RedditJokeResponse[]>)
 
   useEffect(() => {
     const setRandomJoke = () => {
       if (isLoading || !jokes) return
-      
+
       const joke = getRandomJoke(jokes)
       const redditJoke = joke?.data
       if (isMounted) {
-        setRefresh(shouldRefresh => !shouldRefresh)
+        setRefresh((shouldRefresh) => !shouldRefresh)
         setRedditJoke(redditJoke)
       }
     }
@@ -46,22 +49,23 @@ const Board = ({ fallbackData }: BoardProps) => {
 
   const handleHardRefresh = () => mutate()
 
-  const handleRefreshJokeClick = () => setRefresh(shouldRefresh => !shouldRefresh)
+  const handleRefreshJokeClick = () =>
+    setRefresh((shouldRefresh) => !shouldRefresh)
 
   if (!redditJoke) return null
 
   const { title, selftext, url } = redditJoke
- 
+
   return (
-		<Card>
-			<Joke title={title} joke={selftext} link={url} />
-			<button type="button" onClick={handleRefreshJokeClick}>
+    <Card>
+      <Joke title={title} joke={selftext} link={url} />
+      <button type="button" onClick={handleRefreshJokeClick}>
         Random joke
-			</button>
+      </button>
       <button type="button" onClick={handleHardRefresh}>
         Fetch new jokes from reddit
-			</button>
-		</Card>
+      </button>
+    </Card>
   )
 }
 

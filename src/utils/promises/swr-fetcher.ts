@@ -1,9 +1,12 @@
 import toast from 'react-hot-toast'
 
 // eslint-disable-next-line no-unused-vars
-export type GetDataProps<T> = 	(data: { signal?:AbortSignal }) => Promise<T>
+export type GetDataProps<T> = (data: { signal?: AbortSignal }) => Promise<T>
 
-const swrFetcher = async <T>(getData: GetDataProps<T>, signal?: AbortSignal) => {
+const swrFetcher = async <T>(
+  getData: GetDataProps<T>,
+  signal?: AbortSignal
+) => {
   const fetchingPromise = getData({ signal })
 
   toast.promise(fetchingPromise, {
