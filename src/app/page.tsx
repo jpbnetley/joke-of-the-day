@@ -8,21 +8,21 @@ import PageHeader from 'components/page-header/index'
 import { handleFetchRedditJokes } from 'utils/get-data/reddit/handle-fetch-reddit-jokes'
 import styles from './page.module.css'
 
- const Home = async () => {
-	const redditJokes = await handleFetchRedditJokes()
-	
-	return (
-	<main>
-			<PageHeader text='Random jokes from Reddit'/>
-			<div className={styles.mainContainer}>
-			<ErrorBoundary>
-				<Suspense fallback={<LoadingCard />}>
-					<Board fallbackData={redditJokes}/>
-				</Suspense>
-			</ErrorBoundary>
-			<Toaster position="top-right"/>
-			</div>
-		</main>
+const Home = async () => {
+  const redditJokes = await handleFetchRedditJokes()
+
+  return (
+    <main>
+      <PageHeader text="Random jokes from Reddit" />
+      <div className={styles.mainContainer}>
+        <ErrorBoundary>
+          <Suspense fallback={<LoadingCard />}>
+            <Board fallbackData={redditJokes} />
+          </Suspense>
+        </ErrorBoundary>
+        <Toaster position="top-right" />
+      </div>
+    </main>
   )
 }
 

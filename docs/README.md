@@ -7,10 +7,13 @@ This app pulls a random joke from `reddit.com/r/jokes`
 - [Reddit api](https://www.reddit.com/dev/api)
 
 ## Getting started
+
 ### Requirements
+
 - [nodeJS](https://nodejs.org/en/download)
 - [pnpm package manager](https://pnpm.io)
-> Install pnpm globally
+  > Install pnpm globally
+
 ```bash
 npm install -g pnpm
 ```
@@ -22,7 +25,9 @@ pnpm i
 ```
 
 ### Running the project
+
 #### dev
+
 ```bash
 pnpm run dev
 ```
@@ -30,15 +35,19 @@ pnpm run dev
 #### Production
 
 Build for production:
+
 ```bash
 pnpm run build
 ```
+
 Start production build
+
 ```bash
 pnpm run start
 ```
 
 ## Deployed site:
+
 - [Production](https://joke-of-the-day-prod.vercel.app)
 - [Dev](https://joke-of-the-day-dev.vercel.app)
 

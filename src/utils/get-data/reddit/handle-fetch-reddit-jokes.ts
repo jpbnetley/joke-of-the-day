@@ -1,11 +1,11 @@
-import { getJokesAsJson } from "./joke"
+import { getJokesAsJson } from './joke'
 
 /**
  * fetches the reddit jokes, if the reddit joke api returns an error,
  * an empty joke list is returned
  * @returns reddit jokes
  */
-export const handleFetchRedditJokes = async () =>  {
+export const handleFetchRedditJokes = async () => {
   try {
     const redditResponse = await getJokesAsJson()
 

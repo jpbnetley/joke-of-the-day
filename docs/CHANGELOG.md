@@ -1,125 +1,107 @@
 # [1.1.0-dev.80](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.79...v1.1.0-dev.80) (2024-01-27)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.11.8 ([fafb6de](https://github.com/jpbnetley/joke-of-the-day/commit/fafb6de1d07f710f9cf5bcebe721d1190c765586))
+- **deps:** update dependency @types/node to v20.11.8 ([fafb6de](https://github.com/jpbnetley/joke-of-the-day/commit/fafb6de1d07f710f9cf5bcebe721d1190c765586))
 
 # [1.1.0-dev.79](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.78...v1.1.0-dev.79) (2024-01-26)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.11.7 ([1217fc5](https://github.com/jpbnetley/joke-of-the-day/commit/1217fc53b3e5c4d6178ba8345c58ddf93279a9da))
+- **deps:** update dependency @types/node to v20.11.7 ([1217fc5](https://github.com/jpbnetley/joke-of-the-day/commit/1217fc53b3e5c4d6178ba8345c58ddf93279a9da))
 
 # [1.1.0-dev.78](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.77...v1.1.0-dev.78) (2024-01-24)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.11.6 ([87cd861](https://github.com/jpbnetley/joke-of-the-day/commit/87cd86175de4307543c4b5a76be58bae9198b1e5))
+- **deps:** update dependency @types/node to v20.11.6 ([87cd861](https://github.com/jpbnetley/joke-of-the-day/commit/87cd86175de4307543c4b5a76be58bae9198b1e5))
 
 # [1.1.0-dev.77](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.76...v1.1.0-dev.77) (2024-01-20)
 
-
 ### Features
 
-* moved components to root folder out of app folder ([faac22c](https://github.com/jpbnetley/joke-of-the-day/commit/faac22c6c66d966f694c5af7b98366a07a042414))
+- moved components to root folder out of app folder ([faac22c](https://github.com/jpbnetley/joke-of-the-day/commit/faac22c6c66d966f694c5af7b98366a07a042414))
 
 # [1.1.0-dev.76](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.75...v1.1.0-dev.76) (2024-01-19)
 
-
 ### Bug Fixes
 
-* **deps:** update nextjs monorepo to v14.1.0 ([86f7ac2](https://github.com/jpbnetley/joke-of-the-day/commit/86f7ac2d5ad499cf9417f3daae7e21dbd8350bd7))
+- **deps:** update nextjs monorepo to v14.1.0 ([86f7ac2](https://github.com/jpbnetley/joke-of-the-day/commit/86f7ac2d5ad499cf9417f3daae7e21dbd8350bd7))
 
 # [1.1.0-dev.75](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.74...v1.1.0-dev.75) (2024-01-18)
 
-
 ### Bug Fixes
 
-* cleanup css modules; fix card styles ([06ef1fc](https://github.com/jpbnetley/joke-of-the-day/commit/06ef1fc87cb46058f6183f188dd0c82b296ed08f))
+- cleanup css modules; fix card styles ([06ef1fc](https://github.com/jpbnetley/joke-of-the-day/commit/06ef1fc87cb46058f6183f188dd0c82b296ed08f))
 
 # [1.1.0-dev.74](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.73...v1.1.0-dev.74) (2024-01-17)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.11.5 ([9fbc412](https://github.com/jpbnetley/joke-of-the-day/commit/9fbc412a7240c79cd0ab3e7f520316bb3063f34e))
+- **deps:** update dependency @types/node to v20.11.5 ([9fbc412](https://github.com/jpbnetley/joke-of-the-day/commit/9fbc412a7240c79cd0ab3e7f520316bb3063f34e))
 
 # [1.1.0-dev.73](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.72...v1.1.0-dev.73) (2024-01-17)
 
-
 ### Bug Fixes
 
-* clean up css for page ([455e642](https://github.com/jpbnetley/joke-of-the-day/commit/455e642c7afcb64a2028928a5923efa1793821a6))
+- clean up css for page ([455e642](https://github.com/jpbnetley/joke-of-the-day/commit/455e642c7afcb64a2028928a5923efa1793821a6))
 
 # [1.1.0-dev.72](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.71...v1.1.0-dev.72) (2024-01-16)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.11.4 ([9694b5b](https://github.com/jpbnetley/joke-of-the-day/commit/9694b5b5905fa8d8e39108428c91c328de950a6f))
+- **deps:** update dependency @types/node to v20.11.4 ([9694b5b](https://github.com/jpbnetley/joke-of-the-day/commit/9694b5b5905fa8d8e39108428c91c328de950a6f))
 
 # [1.1.0-dev.71](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.70...v1.1.0-dev.71) (2024-01-15)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/react to v18.2.48 ([9e31893](https://github.com/jpbnetley/joke-of-the-day/commit/9e31893220e9262625f9ec9ed8b139030b211cb5))
+- **deps:** update dependency @types/react to v18.2.48 ([9e31893](https://github.com/jpbnetley/joke-of-the-day/commit/9e31893220e9262625f9ec9ed8b139030b211cb5))
 
 # [1.1.0-dev.70](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.69...v1.1.0-dev.70) (2024-01-15)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.11.1 ([7c285f0](https://github.com/jpbnetley/joke-of-the-day/commit/7c285f08e15b936eb022a7f6dcb3063a1c086f5a))
+- **deps:** update dependency @types/node to v20.11.1 ([7c285f0](https://github.com/jpbnetley/joke-of-the-day/commit/7c285f08e15b936eb022a7f6dcb3063a1c086f5a))
 
 # [1.1.0-dev.69](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.68...v1.1.0-dev.69) (2024-01-11)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.11.0 ([e4d9f8f](https://github.com/jpbnetley/joke-of-the-day/commit/e4d9f8fdd109f847fbebc90d2d422bb5cf1a7e31))
+- **deps:** update dependency @types/node to v20.11.0 ([e4d9f8f](https://github.com/jpbnetley/joke-of-the-day/commit/e4d9f8fdd109f847fbebc90d2d422bb5cf1a7e31))
 
 # [1.1.0-dev.68](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.67...v1.1.0-dev.68) (2024-01-09)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.10.8 ([de9e6de](https://github.com/jpbnetley/joke-of-the-day/commit/de9e6de7f43fb159c75a639b5781eaf0fbea875e))
+- **deps:** update dependency @types/node to v20.10.8 ([de9e6de](https://github.com/jpbnetley/joke-of-the-day/commit/de9e6de7f43fb159c75a639b5781eaf0fbea875e))
 
 # [1.1.0-dev.67](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.66...v1.1.0-dev.67) (2024-01-07)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.10.7 ([11d8c61](https://github.com/jpbnetley/joke-of-the-day/commit/11d8c6134e6219910a7540c7ecfa888e2e8a2399))
+- **deps:** update dependency @types/node to v20.10.7 ([11d8c61](https://github.com/jpbnetley/joke-of-the-day/commit/11d8c6134e6219910a7540c7ecfa888e2e8a2399))
 
 # [1.1.0-dev.66](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.65...v1.1.0-dev.66) (2024-01-06)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/react to v18.2.47 ([b3ce9aa](https://github.com/jpbnetley/joke-of-the-day/commit/b3ce9aaab1d023702a4a63d6f94a462bdc6dc6b4))
+- **deps:** update dependency @types/react to v18.2.47 ([b3ce9aa](https://github.com/jpbnetley/joke-of-the-day/commit/b3ce9aaab1d023702a4a63d6f94a462bdc6dc6b4))
 
 # [1.1.0-dev.65](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.64...v1.1.0-dev.65) (2023-12-30)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/node to v20.10.6 ([de3d439](https://github.com/jpbnetley/joke-of-the-day/commit/de3d4399cbe9cd430c30f6943663324af2f44e3e))
+- **deps:** update dependency @types/node to v20.10.6 ([de3d439](https://github.com/jpbnetley/joke-of-the-day/commit/de3d4399cbe9cd430c30f6943663324af2f44e3e))
 
 # [1.1.0-dev.64](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.63...v1.1.0-dev.64) (2023-12-28)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @types/react to v18.2.46 ([62484b9](https://github.com/jpbnetley/joke-of-the-day/commit/62484b968512c51cb73eb7d88cbd40f40cdf0df2))
+- **deps:** update dependency @types/react to v18.2.46 ([62484b9](https://github.com/jpbnetley/joke-of-the-day/commit/62484b968512c51cb73eb7d88cbd40f40cdf0df2))
 
 # [1.1.0-dev.63](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.62...v1.1.0-dev.63) (2023-12-19)
 
-
 ### Bug Fixes
 
-* renamed getJokes config ([c669d8d](https://github.com/jpbnetley/joke-of-the-day/commit/c669d8d23d0abf790f19dc56698fa056876df486))
+- renamed getJokes config ([c669d8d](https://github.com/jpbnetley/joke-of-the-day/commit/c669d8d23d0abf790f19dc56698fa056876df486))

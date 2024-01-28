@@ -1,4 +1,4 @@
-import { ReactNode} from 'react'
+import { ReactNode } from 'react'
 import { Metadata } from 'next'
 
 import TopBar from 'components/top-bar/index'
@@ -13,15 +13,13 @@ export type RootLayoutType = {
   children: ReactNode
 }
 
-export default function RootLayout ({
-  children
-}: RootLayoutType) {
+export default function RootLayout({ children }: RootLayoutType) {
   return (
-		<html lang="en">
-			<body>
-				<TopBar />
-				{children}
-			</body>
-		</html>
+    <html lang="en">
+      <body>
+        <TopBar />
+        {children}
+      </body>
+    </html>
   )
 }
