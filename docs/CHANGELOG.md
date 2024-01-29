@@ -1,3 +1,10 @@
+# [1.1.0-dev.84](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.83...v1.1.0-dev.84) (2024-01-29)
+
+
+### Bug Fixes
+
+* husky update ([5bb22b0](https://github.com/jpbnetley/joke-of-the-day/commit/5bb22b0770e61ba07b25a720096dc576748e364d))
+
 # [1.1.0-dev.83](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.82...v1.1.0-dev.83) (2024-01-29)
 
 
