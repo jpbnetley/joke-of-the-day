@@ -18,7 +18,7 @@
     "test": "jest --passWithNoTests",
     "test:wa": "jest -w",
     "predeploy": "npm run build",
-    "prepare": "husky",
+    "prepare": "husky || exit 0",
     "clean:next": "rm -rf .next",
     "clean:node": "rm -rf node_modules",
     "clean:build": "rm -rf dist",
