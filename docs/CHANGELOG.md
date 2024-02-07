@@ -1,3 +1,10 @@
+# [1.1.0-dev.95](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.94...v1.1.0-dev.95) (2024-02-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/react-dom to v18.2.19 ([604f35b](https://github.com/jpbnetley/joke-of-the-day/commit/604f35b0932d4bfec50d7e5c4dd7ca74f5aed470))
+
 # [1.1.0-dev.94](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.93...v1.1.0-dev.94) (2024-02-06)
 
 
