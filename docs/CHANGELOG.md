@@ -1,3 +1,13 @@
+# [1.1.0-dev.114](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.113...v1.1.0-dev.114) (2024-03-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20.11.25 ([c07562e](https://github.com/jpbnetley/joke-of-the-day/commit/c07562ef7cb71cd564e93b815894e5b253c3cccd))
+* **deps:** update dependency typescript to v5.4.2 ([5c29d8e](https://github.com/jpbnetley/joke-of-the-day/commit/5c29d8eebf9c2f4a4c37c13a0f51a959854806b6))
+* **deps:** update nextjs monorepo to v14.1.3 ([f39fc3c](https://github.com/jpbnetley/joke-of-the-day/commit/f39fc3c8a5b36f58279391f8312f2b2403e11f91))
+* **deps:** update react monorepo ([9a9a8e6](https://github.com/jpbnetley/joke-of-the-day/commit/9a9a8e6225f2e267452f6aa5c1cd2d70e1de4538))
+
 # [1.1.0-dev.113](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.112...v1.1.0-dev.113) (2024-03-06)
 
 
