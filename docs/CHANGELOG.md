@@ -1,3 +1,10 @@
+# [1.1.0-dev.124](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.123...v1.1.0-dev.124) (2024-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/react to v18.2.69 ([197f65b](https://github.com/jpbnetley/joke-of-the-day/commit/197f65bd65fcc9a1e4e4fd32c72f2f5bb8948f45))
+
 # [1.1.0-dev.123](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.122...v1.1.0-dev.123) (2024-03-21)
 
 
