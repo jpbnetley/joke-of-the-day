@@ -1,3 +1,10 @@
+# [1.1.0-dev.133](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.132...v1.1.0-dev.133) (2024-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript to v5.4.4 ([d5658fe](https://github.com/jpbnetley/joke-of-the-day/commit/d5658fe62f2e09ca0986ecc556dcf650d1b764e5))
+
 # [1.1.0-dev.132](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.131...v1.1.0-dev.132) (2024-04-04)
 
 
