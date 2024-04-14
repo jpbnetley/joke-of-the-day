@@ -13,7 +13,7 @@ import Header from './components/header/index'
 	
 	return (
 	<main className={styles.MainContainer}>
-			<Header text='Random jokes from Reddit'/>
+				<Header text='Random jokes from Reddit'/>
 			<div className={styles.PageContainer}>
 			<ErrorBoundary>
 				<Suspense fallback={<LoadingCard />}>
