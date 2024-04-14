@@ -1,3 +1,10 @@
+# [1.1.0-dev.140](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.139...v1.1.0-dev.140) (2024-04-14)
+
+
+### Bug Fixes
+
+* regression for app header styling ([538747e](https://github.com/jpbnetley/joke-of-the-day/commit/538747eebc43500424d72bc73862b05c1374ffa3))
+
 # [1.1.0-dev.139](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.138...v1.1.0-dev.139) (2024-04-14)
 
 
