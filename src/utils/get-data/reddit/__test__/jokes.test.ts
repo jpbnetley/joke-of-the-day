@@ -1,4 +1,3 @@
-
 import { skipFirst2Jokes } from 'utils/get-data/reddit/joke'
 
 describe(`${skipFirst2Jokes.name}`, () => {

@@ -1,4 +1,3 @@
-
 import styles from './styles.module.css'
 
 export interface HeaderProps {
@@ -6,9 +5,7 @@ export interface HeaderProps {
 }
 
 const Header = ({ text }: HeaderProps) => (
-  <header className={styles.AppHeader}>
-        {text}
-			</header>
+  <header className={styles.AppHeader}>{text}</header>
 )
 
 export default Header

@@ -1,13 +1,10 @@
-
 .MainContainer {
   min-height: 100svh;
   min-width: 100svw;
 }
-
 
 .PageContainer {
   display: grid;
   place-content: center;
   height: 100svh;
 }
-

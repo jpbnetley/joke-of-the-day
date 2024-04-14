@@ -1,5 +1,9 @@
-import Loader from "./components/loader/index"
+import Loader from './components/loader/index'
 
-const LoadingPage = () => <><Loader /></>
+const LoadingPage = () => (
+  <>
+    <Loader />
+  </>
+)
 
 export default LoadingPage

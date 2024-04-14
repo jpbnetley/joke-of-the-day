@@ -1,7 +1,7 @@
-import {getJokesAsJson}from 'utils/get-data/reddit/joke'
+import { getJokesAsJson } from 'utils/get-data/reddit/joke'
 
 export type JokeConfig = {
-	signal?: AbortSignal
+  signal?: AbortSignal
 }
 const getJokes = async (props?: JokeConfig) => {
   const { signal } = props ?? {}
