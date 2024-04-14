@@ -14,7 +14,9 @@ const Joke = ({ title, joke, link }: Props) => {
   return (
     <div>
       <h1>{title}</h1>
+      <hr className={style.hr} />
       <p>{joke}</p>
+
       <a
         className={style.link}
         target="_blank"
