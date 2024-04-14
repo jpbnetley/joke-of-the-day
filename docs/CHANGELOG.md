@@ -1,3 +1,11 @@
+# [1.1.0-dev.139](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.138...v1.1.0-dev.139) (2024-04-14)
+
+
+### Bug Fixes
+
+* update deps ([61ae661](https://github.com/jpbnetley/joke-of-the-day/commit/61ae661a06e5e62e8b9d95f83af92d0cad177848))
+* update deps ([d827c7a](https://github.com/jpbnetley/joke-of-the-day/commit/d827c7a50cf8162711077e0dc8eacdd663e708aa))
+
 # [1.1.0-dev.138](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.137...v1.1.0-dev.138) (2024-04-14)
 
 ### Bug Fixes
