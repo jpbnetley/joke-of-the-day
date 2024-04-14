@@ -7,7 +7,7 @@ import swrFetcher, { GetDataProps } from 'utils/promises/swr-fetcher'
 const useGetData = <T>(
   key: string,
   fetcher: GetDataProps<T>,
-  config?: SWRConfiguration,
+  config?: SWRConfiguration
 ) => {
   const abortRequest = useRef<AbortSignal | undefined>()
 

@@ -11,7 +11,7 @@ export const getJokesAsJson = async (signal?: AbortSignal) => {
   if (!jokesResponse.ok)
     throw new Error(
       `status: ${jokesResponse.status} statusText: ${jokesResponse.statusText}`,
-      { cause: 'reddit joke api' },
+      { cause: 'reddit joke api' }
     )
 
   return (await jokesResponse.json()) as RedditJsonResponse
@@ -45,7 +45,7 @@ export const getRandomJokeIndex = (length: number): number => {
  * Gets a random joke out of state
  */
 export const getRandomJoke = (
-  jokes: RedditJokeResponse[],
+  jokes: RedditJokeResponse[]
 ): RedditJokeResponse | null => {
   if (!jokes.length) return null
 
