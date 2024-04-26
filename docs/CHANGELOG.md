@@ -1,3 +1,10 @@
+# [1.1.0-dev.145](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.144...v1.1.0-dev.145) (2024-04-26)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo ([283c036](https://github.com/jpbnetley/joke-of-the-day/commit/283c03657b7e6ffc0576630ea58d31bc857e6c4c))
+
 # [1.1.0-dev.144](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.143...v1.1.0-dev.144) (2024-04-25)
 
 
