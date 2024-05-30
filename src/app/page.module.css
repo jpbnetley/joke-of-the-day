@@ -1,13 +1,7 @@
-
-.MainContainer {
-  min-height: 100svh;
-  min-width: 100svw;
-}
-
-
-.PageContainer {
+.mainContainer {
+  position: absolute;
+  top: 25%;
+  left: 25%;
   display: grid;
   place-content: center;
-  height: 100svh;
 }
-

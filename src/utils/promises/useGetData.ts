@@ -4,7 +4,11 @@ import type { SWRConfiguration } from 'swr'
 
 import swrFetcher, { GetDataProps } from 'utils/promises/swr-fetcher'
 
-const useGetData = <T>(key:string, fetcher: GetDataProps<T>, config?: SWRConfiguration) => {
+const useGetData = <T>(
+  key: string,
+  fetcher: GetDataProps<T>,
+  config?: SWRConfiguration
+) => {
   const abortRequest = useRef<AbortSignal | undefined>()
 
   useEffect(() => {

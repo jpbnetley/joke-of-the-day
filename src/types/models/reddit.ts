@@ -5,12 +5,12 @@ export interface RedditJoke {
 }
 
 export interface RedditJokeResponse {
-  data?: RedditJoke,
+  data?: RedditJoke
   kind: string
 }
 
 export interface RedditJsonResponse {
-  kind: string,
+  kind: string
   data: {
     after: string
     before: null

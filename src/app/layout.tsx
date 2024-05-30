@@ -1,7 +1,7 @@
-import { ReactNode} from 'react'
+import { ReactNode } from 'react'
 import { Metadata } from 'next'
 
-import TopBar from 'app/components/top-bar/index'
+import TopBar from 'components/top-bar/index'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   description: 'Finds random jokes form reddit'
 }
 
-export default function RootLayout ({
-  children
-}: {
+export type RootLayoutType = {
   children: ReactNode
-}) {
+}
+
+export default function RootLayout({ children }: RootLayoutType) {
   return (
-		<html lang="en">
-			<body>
-				<TopBar />
-				{children}
-			</body>
-		</html>
+    <html lang="en">
+      <body>
+        <TopBar />
+        {children}
+      </body>
+    </html>
   )
 }

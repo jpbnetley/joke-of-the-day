@@ -8,11 +8,11 @@ export type TopBarProps = {
 }
 const TopBar = () => {
   return (
-    <div>
-      <Link href='https://www.reddit.com/r/jokes' className={styles.link}>
+    <header>
+      <Link href="https://www.reddit.com/r/jokes" className={styles.link}>
         Reddit jokes
       </Link>
-    </div>
+    </header>
   )
 }
 
