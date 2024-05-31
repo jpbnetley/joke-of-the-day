@@ -1,3 +1,10 @@
+# [1.1.0-dev.153](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.152...v1.1.0-dev.153) (2024-05-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20.12.14 ([db41869](https://github.com/jpbnetley/joke-of-the-day/commit/db418694a66e18a2bba9d244cfe18ffdfdf83a39))
+
 # [1.1.0-dev.152](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.151...v1.1.0-dev.152) (2024-05-29)
 
 
