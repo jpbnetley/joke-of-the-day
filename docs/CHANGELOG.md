@@ -1,3 +1,24 @@
+# [1.1.0-dev.155](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.154...v1.1.0-dev.155) (2024-06-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20.14.3 ([9e65a58](https://github.com/jpbnetley/joke-of-the-day/commit/9e65a588a23894c4c2e38021f98b018cc288b7d1))
+
+# [1.1.0-dev.154](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.153...v1.1.0-dev.154) (2024-06-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20.14.2 ([3d2c602](https://github.com/jpbnetley/joke-of-the-day/commit/3d2c602b38d886024c8784fbd3a6f19c0523f370))
+
+# [1.1.0-dev.153](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.152...v1.1.0-dev.153) (2024-05-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20.12.14 ([db41869](https://github.com/jpbnetley/joke-of-the-day/commit/db418694a66e18a2bba9d244cfe18ffdfdf83a39))
+
 # [1.1.0-dev.152](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.151...v1.1.0-dev.152) (2024-05-29)
 
 
