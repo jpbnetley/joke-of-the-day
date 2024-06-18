@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.6",
-    "@testing-library/react": "^15.0.7",
+    "@testing-library/react": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "^9.1.0",
