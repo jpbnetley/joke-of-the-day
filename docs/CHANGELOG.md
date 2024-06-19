@@ -1,3 +1,10 @@
+# [1.1.0-dev.159](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.158...v1.1.0-dev.159) (2024-06-19)
+
+
+### Bug Fixes
+
+* **deps:** update testing-library ([f3caa2a](https://github.com/jpbnetley/joke-of-the-day/commit/f3caa2a69541ddd7f3c6bcb748ab78a88b0b3934))
+
 # [1.1.0-dev.158](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.157...v1.1.0-dev.158) (2024-06-19)
 
 
