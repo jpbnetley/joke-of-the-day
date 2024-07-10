@@ -1,3 +1,10 @@
+# [1.1.0-dev.164](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.163...v1.1.0-dev.164) (2024-07-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-next to v14.2.5 ([d9c116c](https://github.com/jpbnetley/joke-of-the-day/commit/d9c116cf28d31d13bf3f11d29ddecc3952b5c686))
+
 # [1.1.0-dev.163](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.162...v1.1.0-dev.163) (2024-07-05)
 
 
