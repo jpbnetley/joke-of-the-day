@@ -1,3 +1,10 @@
+# [1.1.0-dev.171](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.170...v1.1.0-dev.171) (2024-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v14.2.7 ([#1098](https://github.com/jpbnetley/joke-of-the-day/issues/1098)) ([11ea311](https://github.com/jpbnetley/joke-of-the-day/commit/11ea3111d5b6c76e85b20253a752842f1c6b9f82))
+
 # [1.1.0-dev.170](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.169...v1.1.0-dev.170) (2024-08-22)
 
 
