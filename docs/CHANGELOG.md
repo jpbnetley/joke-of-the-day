@@ -1,3 +1,31 @@
+# [1.1.0-dev.174](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.173...v1.1.0-dev.174) (2024-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v22.5.4 ([#1127](https://github.com/jpbnetley/joke-of-the-day/issues/1127)) ([61bed6f](https://github.com/jpbnetley/joke-of-the-day/commit/61bed6f400ae3c05bf6de60e428011b4cbe03b9b))
+
+# [1.1.0-dev.173](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.172...v1.1.0-dev.173) (2024-09-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v22.5.2 ([#1115](https://github.com/jpbnetley/joke-of-the-day/issues/1115)) ([ed1c0fd](https://github.com/jpbnetley/joke-of-the-day/commit/ed1c0fd1db1db946106eec28b4c8583469631d4d))
+
+# [1.1.0-dev.172](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.171...v1.1.0-dev.172) (2024-08-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/react to v18.3.5 ([#1120](https://github.com/jpbnetley/joke-of-the-day/issues/1120)) ([3942d29](https://github.com/jpbnetley/joke-of-the-day/commit/3942d29d1c3382156fb104bc3060a44c390255ec))
+
+# [1.1.0-dev.171](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.170...v1.1.0-dev.171) (2024-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v14.2.7 ([#1098](https://github.com/jpbnetley/joke-of-the-day/issues/1098)) ([11ea311](https://github.com/jpbnetley/joke-of-the-day/commit/11ea3111d5b6c76e85b20253a752842f1c6b9f82))
+
 # [1.1.0-dev.170](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.169...v1.1.0-dev.170) (2024-08-22)
 
 
