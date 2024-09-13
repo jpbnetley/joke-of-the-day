@@ -26,7 +26,7 @@
     "clean": "pnpm run clean:next && pnpm run clean:node && pnpm run clean:build"
   },
   "dependencies": {
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^29.5.13",
     "@types/node": "22.5.4",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
