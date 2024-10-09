@@ -1,3 +1,10 @@
+# [1.1.0-dev.187](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.186...v1.1.0-dev.187) (2024-10-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next to v14.2.15 ([#1188](https://github.com/jpbnetley/joke-of-the-day/issues/1188)) ([7344b49](https://github.com/jpbnetley/joke-of-the-day/commit/7344b497ab621c23f992859214f14fceba56ec39))
+
 # [1.1.0-dev.186](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.185...v1.1.0-dev.186) (2024-10-08)
 
 
