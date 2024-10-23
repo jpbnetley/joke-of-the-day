@@ -8,7 +8,7 @@
   },
   "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -26,14 +26,14 @@
     "clean": "pnpm run clean:next && pnpm run clean:node && pnpm run clean:build"
   },
   "dependencies": {
-    "@types/jest": "^29.5.14",
-    "@types/node": "22.7.9",
-    "@types/react": "18.3.12",
-    "@types/react-dom": "18.3.1",
-    "eslint-config-next": "14.2.16",
-    "next": "14.2.16",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "22.5.4",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "eslint-config-next": "15.0.1",
+    "next": "15.0.1",
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
     "react-hot-toast": "^2.4.1",
     "swr": "^2.2.5",
     "typescript": "5.4.5"
@@ -54,5 +54,11 @@
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "npm:types-react@19.0.0-rc.1",
+      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    }
   }
 }
