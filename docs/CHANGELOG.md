@@ -1,3 +1,10 @@
+# [1.1.0-dev.199](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.198...v1.1.0-dev.199) (2024-11-01)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo to v19.0.0-rc-fb9a90fa48-20240614 ([#1235](https://github.com/jpbnetley/joke-of-the-day/issues/1235)) ([f5d57f1](https://github.com/jpbnetley/joke-of-the-day/commit/f5d57f1a2e48730792faca619f61c898cb41ce9d))
+
 # [1.1.0-dev.198](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.197...v1.1.0-dev.198) (2024-10-31)
 
 
