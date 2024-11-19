@@ -6,7 +6,7 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
+  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -27,23 +27,23 @@
   },
   "dependencies": {
     "@types/jest": "^29.5.14",
-    "@types/node": "22.7.9",
+    "@types/node": "22.9.0",
     "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
-    "eslint-config-next": "15.0.1",
-    "next": "15.0.1",
-    "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "@types/react-dom": "npm:types-react-dom@19.0.0",
+    "eslint-config-next": "15.0.3",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-fb9a90fa48-20240614",
+    "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
     "react-hot-toast": "^2.4.1",
     "swr": "^2.2.5",
-    "typescript": "5.4.5"
+    "typescript": "5.6.3"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
-    "@typescript-eslint/eslint-plugin": "^8.11.0",
-    "eslint": "8.57.1",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "eslint": "9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^28.8.3",
@@ -58,7 +58,7 @@
   "pnpm": {
     "overrides": {
       "@types/react": "npm:types-react@19.0.0-rc.1",
-      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+      "@types/react-dom": "npm:types-react-dom@19.0.0"
     }
   }
 }
