@@ -28,7 +28,7 @@
   "dependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "22.10.1",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react": "19.0.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0",
     "eslint-config-next": "15.0.4",
     "next": "15.0.4",
@@ -54,11 +54,5 @@
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.10",
     "prettier": "^3.4.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "npm:types-react@19.0.0-rc.1",
-      "@types/react-dom": "npm:types-react-dom@19.0.0"
-    }
   }
 }
