@@ -41,8 +41,8 @@
   "devDependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.0.1",
-    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@testing-library/react": "^16.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
     "eslint": "9.16.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
@@ -53,6 +53,6 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "lint-staged": "^15.2.10",
-    "prettier": "^3.4.1"
+    "prettier": "^3.4.2"
   }
 }

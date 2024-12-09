@@ -13,7 +13,7 @@ const compat = new FlatCompat({
   allConfig: js.configs.all
 })
 
-const config =  [
+const config = [
   ...compat.extends(
     'next/core-web-vitals',
     'next',
