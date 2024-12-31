@@ -1,3 +1,10 @@
+# [1.1.0-dev.216](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.215...v1.1.0-dev.216) (2024-12-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-hot-toast to v2.5.1 ([#1311](https://github.com/jpbnetley/joke-of-the-day/issues/1311)) ([a0920f9](https://github.com/jpbnetley/joke-of-the-day/commit/a0920f9d3a2ff49379fc3ce387d3d32409de08e1))
+
 # [1.1.0-dev.215](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.214...v1.1.0-dev.215) (2024-12-27)
 
 
