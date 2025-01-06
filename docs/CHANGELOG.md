@@ -1,3 +1,24 @@
+# [1.1.0-dev.218](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.217...v1.1.0-dev.218) (2025-01-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v22.10.5 ([#1315](https://github.com/jpbnetley/joke-of-the-day/issues/1315)) ([f33a4bd](https://github.com/jpbnetley/joke-of-the-day/commit/f33a4bd54bf5eab2b35b1ecf256f271acf0f8956))
+
+# [1.1.0-dev.217](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.216...v1.1.0-dev.217) (2025-01-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v22.10.4 ([#1313](https://github.com/jpbnetley/joke-of-the-day/issues/1313)) ([9cc49de](https://github.com/jpbnetley/joke-of-the-day/commit/9cc49de723d05c4e7256d792efdd75bb5d723515))
+
+# [1.1.0-dev.216](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.215...v1.1.0-dev.216) (2024-12-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-hot-toast to v2.5.1 ([#1311](https://github.com/jpbnetley/joke-of-the-day/issues/1311)) ([a0920f9](https://github.com/jpbnetley/joke-of-the-day/commit/a0920f9d3a2ff49379fc3ce387d3d32409de08e1))
+
 # [1.1.0-dev.215](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.214...v1.1.0-dev.215) (2024-12-27)
 
 
