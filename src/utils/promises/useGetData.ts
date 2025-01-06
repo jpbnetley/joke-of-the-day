@@ -9,7 +9,7 @@ const useGetData = <T>(
   fetcher: GetDataProps<T>,
   config?: SWRConfiguration
 ) => {
-  const abortRequest = useRef<AbortSignal | undefined>()
+  const abortRequest = useRef<AbortSignal | undefined>(undefined)
 
   useEffect(() => {
     const abort = new AbortController()
