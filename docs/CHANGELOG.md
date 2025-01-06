@@ -1930,7 +1930,7 @@
 
 * **deps:** update dependency @types/node to v20.12.14 ([db41869](https://github.com/jpbnetley/joke-of-the-day/commit/db418694a66e18a2bba9d244cfe18ffdfdf83a39))
 
-# [1.1.0](https://github.com/jpbnetley/joke-of-the-day/compare/v1.0.0...v1.1.0) (2024-05-30)
+# [1.1.0](https://github.com/jpbnetley/joke-of-the-day/compare/v1.0.0...v1.1.0) (2024-08-25)
 
 
 ### Bug Fixes
