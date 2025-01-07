@@ -33,6 +33,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: pnpm/action-setup@v4
+    - uses: pnpm/action-setup@v4
 
     - name: Use Node.js ${{ env.node_version }}
       uses: actions/setup-node@v4
@@ -83,6 +84,7 @@ jobs:
               }
             ]
         env:
+          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS }}
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS }}
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
