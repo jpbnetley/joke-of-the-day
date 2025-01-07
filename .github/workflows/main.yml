@@ -44,11 +44,11 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Get env name
-      id: env
+      id: envRunner
       run:  echo "env=${{ github.ref == 'refs/heads/dev' && 'development' || 'production' }}" >> $GITHUB_OUTPUT
 
     - name: log output
-      run: echo "${{steps.env.outputs }}"
+      run: echo "${{steps.envRunner.outputs.env }}"
     
     - name: Build and deploy
       uses: ./.github/actions/build-and-deploy
