@@ -43,7 +43,7 @@ jobs:
     - uses: actions/checkout@v4
     
     - name: Build and deploy
-      uses: ./github/actions/build-and-deploy
+      uses: ./.github/actions/build-and-deploy
       with:
         environment: ${{ github.ref == 'refs/heads/dev' && 'development' || 'production' }}
         node_version: ${{ env.node_version }}
