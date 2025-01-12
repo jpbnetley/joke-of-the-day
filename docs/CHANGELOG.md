@@ -1,3 +1,24 @@
+# [1.1.0-dev.225](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.224...v1.1.0-dev.225) (2025-01-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/react to v19.0.5 ([#1335](https://github.com/jpbnetley/joke-of-the-day/issues/1335)) ([3bd9149](https://github.com/jpbnetley/joke-of-the-day/commit/3bd9149a84c2600e8695784f217e0352567672db))
+
+# [1.1.0-dev.224](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.223...v1.1.0-dev.224) (2025-01-09)
+
+
+### Bug Fixes
+
+* update deps ([#1333](https://github.com/jpbnetley/joke-of-the-day/issues/1333)) ([dad50fe](https://github.com/jpbnetley/joke-of-the-day/commit/dad50feffa5e7d558429b9bea4de07b50072282c))
+
+# [1.1.0-dev.223](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.222...v1.1.0-dev.223) (2025-01-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript to v5.7.3 ([#1332](https://github.com/jpbnetley/joke-of-the-day/issues/1332)) ([af2c502](https://github.com/jpbnetley/joke-of-the-day/commit/af2c5024329c44292ed4ac23855d7efd80763028))
+
 # [1.1.0-dev.222](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.221...v1.1.0-dev.222) (2025-01-09)
 
 
