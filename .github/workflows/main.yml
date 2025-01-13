@@ -6,10 +6,10 @@ run-name: Build and deploy to ${{ github.ref == 'refs/heads/dev' && 'development
 # Controls when the action will run.
 on:
   workflow_dispatch:
-  # Triggers the workflow on push or pull request events but only for the master branch
+  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: 
-      - master
+      - main
       - dev
 
 env:
@@ -77,7 +77,7 @@ jobs:
         with:
           branches: |
             [
-              'master',
+              'main',
               {
                 name: 'dev',
                 prerelease: true
