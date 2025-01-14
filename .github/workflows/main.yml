@@ -76,7 +76,9 @@ jobs:
         with:
           branches: |
             [
-              'main',
+              {
+                name: 'main'
+              },
               {
                 name: 'dev',
                 prerelease: true
