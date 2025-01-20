@@ -1,3 +1,10 @@
+# [1.1.0-dev.229](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.228...v1.1.0-dev.229) (2025-01-20)
+
+
+### Bug Fixes
+
+* update corepack; update min node to 22 ([#1371](https://github.com/jpbnetley/joke-of-the-day/issues/1371)) ([548254c](https://github.com/jpbnetley/joke-of-the-day/commit/548254cc12081d2bf29a035b6749902b270d706f))
+
 # [1.1.0-dev.228](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.227...v1.1.0-dev.228) (2025-01-20)
 
 
