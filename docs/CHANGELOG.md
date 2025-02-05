@@ -1,3 +1,10 @@
+# [1.1.0-dev.234](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.233...v1.1.0-dev.234) (2025-02-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency swr to v2.3.2 ([#1389](https://github.com/jpbnetley/joke-of-the-day/issues/1389)) ([0aa1383](https://github.com/jpbnetley/joke-of-the-day/commit/0aa13830edf3c402e85338618aefcb740b0c9fdb))
+
 # [1.1.0-dev.233](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.232...v1.1.0-dev.233) (2025-02-05)
 
 
