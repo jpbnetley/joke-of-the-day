@@ -1,3 +1,10 @@
+# [1.1.0-dev.237](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.236...v1.1.0-dev.237) (2025-02-12)
+
+
+### Bug Fixes
+
+* update lock ([#1401](https://github.com/jpbnetley/joke-of-the-day/issues/1401)) ([f219fb3](https://github.com/jpbnetley/joke-of-the-day/commit/f219fb3b991886981894178f7ae648520ea336e4))
+
 # [1.1.0-dev.236](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.235...v1.1.0-dev.236) (2025-02-11)
 
 
