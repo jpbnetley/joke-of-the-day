@@ -18,7 +18,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        command: ['lint','test']
+        command: ['lint','test', 'typescript:check']
 
     steps:
     - uses: actions/checkout@v4

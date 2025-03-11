@@ -23,7 +23,8 @@
     "clean:next": "rm -rf .next",
     "clean:node": "rm -rf node_modules",
     "clean:build": "rm -rf dist",
-    "clean": "pnpm run clean:next && pnpm run clean:node && pnpm run clean:build"
+    "clean": "pnpm run clean:next && pnpm run clean:node && pnpm run clean:build",
+    "typescript:check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/jest": "^29.5.14",
