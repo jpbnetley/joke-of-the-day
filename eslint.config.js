@@ -25,7 +25,7 @@ const config = [
   {
     plugins: {
       '@typescript-eslint': typescriptEslint,
-      jest,
+      jest
     },
 
     languageOptions: {
