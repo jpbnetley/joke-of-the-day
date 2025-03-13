@@ -6,7 +6,7 @@
   "engines": {
     "node": ">=22"
   },
-  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -23,36 +23,41 @@
     "clean:next": "rm -rf .next",
     "clean:node": "rm -rf node_modules",
     "clean:build": "rm -rf dist",
-    "clean": "pnpm run clean:next && pnpm run clean:node && pnpm run clean:build"
+    "clean": "pnpm run clean:next && pnpm run clean:node && pnpm run clean:build",
+    "typescript:check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.13.8",
+    "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "eslint-config-next": "^15.2.0",
+    "eslint-config-next": "^15.2.2",
     "next": "15.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
-    "swr": "^2.3.2",
+    "swr": "^2.3.3",
     "typescript": "5.7.3"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.22.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
-    "@typescript-eslint/eslint-plugin": "^8.25.0",
-    "eslint": "^9.21.0",
-    "eslint-config-prettier": "^10.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^28.11.0",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
+    "globals": "^16.0.0",
     "husky": "^9.1.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "lint-staged": "^15.4.3",
-    "prettier": "^3.5.2"
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.26.1"
   }
 }

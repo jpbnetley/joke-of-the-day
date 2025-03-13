@@ -10,9 +10,15 @@ env:
   node_version: 22
 
 jobs:
-  tests:
-    name: Test
+  validate:
+    name: Validate code
     runs-on: ubuntu-latest
+
+
+    strategy:
+      fail-fast: false
+      matrix:
+        command: ['lint','test', 'typescript:check']
 
     steps:
     - uses: actions/checkout@v4
@@ -24,4 +30,4 @@ jobs:
         node-version: ${{ env.node_version }}
         cache: 'pnpm'
     - run: pnpm install
-    - run: pnpm test
+    - run: pnpm run ${{ matrix.command }}
