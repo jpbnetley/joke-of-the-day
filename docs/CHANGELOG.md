@@ -1,3 +1,10 @@
+# [1.1.0-dev.256](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.255...v1.1.0-dev.256) (2025-03-23)
+
+
+### Bug Fixes
+
+* improve responsiveness ([#1461](https://github.com/jpbnetley/joke-of-the-day/issues/1461)) ([cb7d9b7](https://github.com/jpbnetley/joke-of-the-day/commit/cb7d9b7bd7d576e8a4e580f7d5c1329e8ea65e17))
+
 # [1.1.0-dev.255](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.254...v1.1.0-dev.255) (2025-03-23)
 
 
