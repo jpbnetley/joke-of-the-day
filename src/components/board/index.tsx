@@ -11,6 +11,7 @@ import { RedditJoke, RedditJokeResponse } from 'types/models/reddit'
 import useGetData from 'utils/promises/useGetData'
 import useIsMounted from 'utils/hooks/useIsMounted'
 import { getRandomJoke } from 'utils/get-data/reddit/joke'
+import styles from './styles.module.css'
 
 export interface BoardProps {
   fallbackData?: RedditJokeResponse[]
@@ -59,12 +60,14 @@ const Board = ({ fallbackData }: BoardProps) => {
   return (
     <Card>
       <Joke title={title} joke={selftext} link={url} />
-      <button type="button" onClick={handleRefreshJokeClick}>
-        Random joke
-      </button>
-      <button type="button" onClick={handleHardRefresh}>
-        Fetch new jokes from reddit
-      </button>
+      <div className={styles['button-group']}>
+        <button type="button" onClick={handleRefreshJokeClick}>
+          Random joke
+        </button>
+        <button type="button" onClick={handleHardRefresh}>
+          Fetch new jokes from reddit
+        </button>
+      </div>
     </Card>
   )
 }
