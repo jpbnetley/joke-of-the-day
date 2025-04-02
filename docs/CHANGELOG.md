@@ -1,3 +1,10 @@
+# [1.1.0-dev.264](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.263...v1.1.0-dev.264) (2025-04-02)
+
+
+### Bug Fixes
+
+* **deps:** update react monorepo ([#1480](https://github.com/jpbnetley/joke-of-the-day/issues/1480)) ([355dea3](https://github.com/jpbnetley/joke-of-the-day/commit/355dea33148bbcf803405ccd61a562956ec06efb))
+
 # [1.1.0-dev.263](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.262...v1.1.0-dev.263) (2025-04-01)
 
 
