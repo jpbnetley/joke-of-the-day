@@ -1,3 +1,10 @@
+# [1.1.0-dev.271](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.270...v1.1.0-dev.271) (2025-04-15)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v15.3.0 ([#1497](https://github.com/jpbnetley/joke-of-the-day/issues/1497)) ([85bcc5d](https://github.com/jpbnetley/joke-of-the-day/commit/85bcc5df4eb91dbe9d916c2e7c189f9d44553627))
+
 # [1.1.0-dev.270](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.269...v1.1.0-dev.270) (2025-04-15)
 
 
