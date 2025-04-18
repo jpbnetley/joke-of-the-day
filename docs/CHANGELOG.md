@@ -1,3 +1,10 @@
+# [1.1.0-dev.273](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.272...v1.1.0-dev.273) (2025-04-18)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs to latest ([#1518](https://github.com/jpbnetley/joke-of-the-day/issues/1518)) ([97bd46b](https://github.com/jpbnetley/joke-of-the-day/commit/97bd46bf5f334f115060156b0f84868df1544350))
+
 # [1.1.0-dev.272](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.271...v1.1.0-dev.272) (2025-04-18)
 
 
