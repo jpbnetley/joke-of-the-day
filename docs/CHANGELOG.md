@@ -1,3 +1,10 @@
+# [1.1.0-dev.274](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.273...v1.1.0-dev.274) (2025-04-23)
+
+
+### Bug Fixes
+
+* update deps ([#1524](https://github.com/jpbnetley/joke-of-the-day/issues/1524)) ([cca0010](https://github.com/jpbnetley/joke-of-the-day/commit/cca00109d4871ccd9c10be12523baea63deab692))
+
 # [1.1.0-dev.273](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.272...v1.1.0-dev.273) (2025-04-18)
 
 
