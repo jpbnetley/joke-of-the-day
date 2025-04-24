@@ -10,7 +10,7 @@ env:
   node_version: 22
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
