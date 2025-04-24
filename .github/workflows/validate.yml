@@ -17,8 +17,7 @@ jobs:
   validate:
     name: Validate code
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
+    permissions: {}
 
     strategy:
       fail-fast: false
