@@ -9,6 +9,10 @@ on:
 env:
   node_version: 22
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     name: Validate code
