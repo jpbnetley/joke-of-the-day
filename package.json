@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.15.16",
+    "@types/node": "^22.15.21",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "eslint-config-next": "^15.3.1",
