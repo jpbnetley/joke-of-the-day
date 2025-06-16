@@ -1,3 +1,10 @@
+# [1.1.0-dev.295](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.294...v1.1.0-dev.295) (2025-06-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/jest to v30 ([#1601](https://github.com/jpbnetley/joke-of-the-day/issues/1601)) ([d1f8a51](https://github.com/jpbnetley/joke-of-the-day/commit/d1f8a511cbb73c44e85c7ff64ffbf5e6a9baa6c3))
+
 # [1.1.0-dev.294](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.293...v1.1.0-dev.294) (2025-06-16)
 
 
