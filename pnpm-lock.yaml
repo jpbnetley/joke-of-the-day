@@ -49,8 +49,8 @@ importers:
         specifier: ^9.35.0
         version: 9.35.0
       '@next/eslint-plugin-next':
-        specifier: ^15.5.2
-        version: 15.5.2
+        specifier: ^15.5.3
+        version: 15.5.3
       '@testing-library/dom':
         specifier: ^10.4.1
         version: 10.4.1
