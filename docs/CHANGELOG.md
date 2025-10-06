@@ -1,3 +1,10 @@
+# [1.1.0-dev.326](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.325...v1.1.0-dev.326) (2025-10-06)
+
+
+### Bug Fixes
+
+* **deps:** update typescript to v5.9.3 ([#1824](https://github.com/jpbnetley/joke-of-the-day/issues/1824)) ([ea27c27](https://github.com/jpbnetley/joke-of-the-day/commit/ea27c27432cb506a02b881bc5c0ffce0553c7edc))
+
 # [1.1.0-dev.325](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.324...v1.1.0-dev.325) (2025-10-06)
 
 
