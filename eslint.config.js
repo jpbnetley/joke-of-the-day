@@ -36,15 +36,12 @@ const config = [
       '@typescript-eslint': typescriptEslint,
       jest
     },
-
     languageOptions: {
       globals: {
         ...jest.environments.globals.globals
       },
-
       ecmaVersion: 5,
       sourceType: 'script',
-
       parserOptions: {
         project: ['./tsconfig.json'],
         ecmaFeatures: {
@@ -54,7 +51,6 @@ const config = [
         sourceType: 'module'
       }
     },
-
     rules: {
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
