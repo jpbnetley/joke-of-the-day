@@ -18,8 +18,8 @@ importers:
         specifier: ^19.2.1
         version: 19.2.1
       '@types/react-dom':
-        specifier: ^19.2.0
-        version: 19.2.0(@types/react@19.2.1)
+        specifier: ^19.2.1
+        version: 19.2.1(@types/react@19.2.1)
       eslint-config-next:
         specifier: ^15.5.4
         version: 15.5.4(eslint@9.37.0)(typescript@5.9.3)
@@ -59,7 +59,7 @@ importers:
         version: 6.9.1
       '@testing-library/react':
         specifier: ^16.3.0
-        version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.2.0(@types/react@19.2.1))(@types/react@19.2.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        version: 16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.2.1(@types/react@19.2.1))(@types/react@19.2.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.45.0
         version: 8.45.0(@typescript-eslint/parser@8.45.0(eslint@9.37.0)(typescript@5.9.3))(eslint@9.37.0)(typescript@5.9.3)
@@ -787,8 +787,8 @@ packages:
   '@types/node@24.7.0':
     resolution: {integrity: sha512-IbKooQVqUBrlzWTi79E8Fw78l8k1RNtlDDNWsFZs7XonuQSJ8oNYfEeclhprUldXISRMLzBpILuKgPlIxm+/Yw==}
 
-  '@types/react-dom@19.2.0':
-    resolution: {integrity: sha512-brtBs0MnE9SMx7px208g39lRmC5uHZs96caOJfTjFcYSLHNamvaSMfJNagChVNkup2SdtOxKX1FDBkRSJe1ZAg==}
+  '@types/react-dom@19.2.1':
+    resolution: {integrity: sha512-/EEvYBdT3BflCWvTMO7YkYBHVE9Ci6XdqZciZANQgKpaiDRGOLIlRo91jbTNRQjgPFWVaRxcYc0luVNFitz57A==}
     peerDependencies:
       '@types/react': ^19.2.0
 
@@ -3728,7 +3728,7 @@ snapshots:
       picocolors: 1.1.1
       redent: 3.0.0
 
-  '@testing-library/react@16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.2.0(@types/react@19.2.1))(@types/react@19.2.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@testing-library/react@16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.2.1(@types/react@19.2.1))(@types/react@19.2.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@testing-library/dom': 10.4.1
@@ -3736,7 +3736,7 @@ snapshots:
       react-dom: 19.2.0(react@19.2.0)
     optionalDependencies:
       '@types/react': 19.2.1
-      '@types/react-dom': 19.2.0(@types/react@19.2.1)
+      '@types/react-dom': 19.2.1(@types/react@19.2.1)
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
@@ -3797,7 +3797,7 @@ snapshots:
     dependencies:
       undici-types: 7.14.0
 
-  '@types/react-dom@19.2.0(@types/react@19.2.1)':
+  '@types/react-dom@19.2.1(@types/react@19.2.1)':
     dependencies:
       '@types/react': 19.2.1
 
