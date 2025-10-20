@@ -37,7 +37,7 @@ const Board = ({ fallbackData }: BoardProps) => {
 
       const joke = getRandomJoke(jokes)
       const redditJoke = joke?.data
-      if (isMounted) {
+      if (isMounted()) {
         setRefresh((shouldRefresh) => !shouldRefresh)
         setRedditJoke(redditJoke)
       }
