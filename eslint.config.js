@@ -1,10 +1,10 @@
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
-import jest from 'eslint-plugin-jest'
 import js from '@eslint/js'
 import { FlatCompat } from '@eslint/eslintrc'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import nextVitals from 'eslint-config-next/core-web-vitals'
+import vitest from '@vitest/eslint-plugin'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -34,11 +34,11 @@ const config = [
   {
     plugins: {
       '@typescript-eslint': typescriptEslint,
-      jest
+      vitest
     },
     languageOptions: {
       globals: {
-        ...jest.environments.globals.globals
+        ...vitest.environments.env.globals
       },
       ecmaVersion: 5,
       sourceType: 'script',
@@ -52,6 +52,8 @@ const config = [
       }
     },
     rules: {
+      ...vitest.configs.recommended.rules, // you can also use vitest.configs.all.rules to enable all rules
+      'vitest/max-nested-describe': ['error', { max: 3 }], // you can also modify rules' behavior using option like this
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
       'react/jsx-filename-extension': [

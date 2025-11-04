@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["vitest/globals"],
     "target": "ES6",
     "lib": [
       "dom",
@@ -36,7 +37,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "dist/types/**/*.ts",
-    "jest.config.js",
+    "vitest.config.ts",
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
