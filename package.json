@@ -27,7 +27,7 @@
     "typescript:check": "tsc --noEmit"
   },
   "dependencies": {
-    "@types/node": "^22.19.0",
+    "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "eslint-config-next": "^16.0.1",
