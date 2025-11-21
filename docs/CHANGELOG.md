@@ -1,3 +1,10 @@
+# [1.1.0-dev.333](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.332...v1.1.0-dev.333) (2025-11-21)
+
+
+### Bug Fixes
+
+* **deps:** update vitest v4.0.12 ([#1891](https://github.com/jpbnetley/joke-of-the-day/issues/1891)) ([c68232a](https://github.com/jpbnetley/joke-of-the-day/commit/c68232ac630d3f4782c1bfc64c3d35699d540d6a))
+
 # [1.1.0-dev.332](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.331...v1.1.0-dev.332) (2025-11-20)
 
 
