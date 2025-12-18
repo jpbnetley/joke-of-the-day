@@ -60,6 +60,6 @@
     "prettier": "^3.7.4",
     "typescript-eslint": "^8.49.0",
     "vite-tsconfig-paths": "^6.0.2",
-    "vitest": "^4.0.15"
+    "vitest": "^4.0.16"
   }
 }
