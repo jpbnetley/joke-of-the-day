@@ -1,3 +1,4 @@
+import { defineConfig } from 'eslint/config'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import js from '@eslint/js'
 import { FlatCompat } from '@eslint/eslintrc'
@@ -14,7 +15,7 @@ const compat = new FlatCompat({
   allConfig: js.configs.all
 })
 
-const config = [
+const config = defineConfig(
   {
     ignores: [
       'node_modules/**',
@@ -64,6 +65,6 @@ const config = [
       ]
     }
   }
-]
+)
 
 export default config
