@@ -1,5 +1,4 @@
 import { defineConfig } from 'eslint/config'
-import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import js from '@eslint/js'
 import { FlatCompat } from '@eslint/eslintrc'
 import path from 'node:path'
@@ -34,7 +33,6 @@ const config = defineConfig(
   ),
   {
     plugins: {
-      '@typescript-eslint': typescriptEslint,
       vitest
     },
     languageOptions: {
