@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "files": ["prettier.config.js", "eslint.config.js", ".lintstagedrc.js"]
+}

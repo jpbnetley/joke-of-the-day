@@ -1,18 +1,10 @@
 import { defineConfig } from 'eslint/config'
 import js from '@eslint/js'
-import { FlatCompat } from '@eslint/eslintrc'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import typescriptEslint from 'typescript-eslint'
 import nextVitals from 'eslint-config-next/core-web-vitals'
 import vitest from '@vitest/eslint-plugin'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all
-})
+import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
+import eslintConfigPrettier from 'eslint-config-prettier'
 
 const config = defineConfig(
   {
@@ -22,15 +14,13 @@ const config = defineConfig(
       'out/**',
       'build/**',
       'next-env.d.ts'
-    ]
+    ],
+    files: ['src/**/*.{js,jsx,ts,tsx}']
   },
   ...nextVitals,
-  ...compat.extends(
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'prettier',
-    'plugin:prettier/recommended'
-  ),
+  js.configs.recommended,
+  typescriptEslint.configs.recommended,
+  eslintPluginPrettier,
   {
     plugins: {
       vitest
@@ -39,13 +29,8 @@ const config = defineConfig(
       globals: {
         ...vitest.environments.env.globals
       },
-      ecmaVersion: 5,
-      sourceType: 'script',
       parserOptions: {
-        project: ['./tsconfig.json'],
-        ecmaFeatures: {
-          jsx: true
-        },
+        project: ['./tsconfig.eslint.json'],
         ecmaVersion: 13,
         sourceType: 'module'
       }
@@ -62,7 +47,8 @@ const config = defineConfig(
         }
       ]
     }
-  }
+  },
+  eslintConfigPrettier
 )
 
 export default config
