@@ -1,3 +1,10 @@
+# [1.1.0-dev.350](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.349...v1.1.0-dev.350) (2026-02-20)
+
+
+### Bug Fixes
+
+* update eslint config ([#2030](https://github.com/jpbnetley/joke-of-the-day/issues/2030)) ([1ebc5e6](https://github.com/jpbnetley/joke-of-the-day/commit/1ebc5e63adef4b4e65cec6a9dff2f6b93d8bbde8))
+
 # [1.1.0-dev.349](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.348...v1.1.0-dev.349) (2026-02-12)
 
 
