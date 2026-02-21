@@ -1,10 +1,13 @@
-import { defineConfig } from 'eslint/config'
+import { defineConfig, globalIgnores } from 'eslint/config'
 import js from '@eslint/js'
 import typescriptEslint from 'typescript-eslint'
-import nextVitals from 'eslint-config-next/core-web-vitals'
 import vitest from '@vitest/eslint-plugin'
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
 import eslintConfigPrettier from 'eslint-config-prettier'
+import nextVitals from 'eslint-config-next/core-web-vitals'
+import eslintPluginImport from 'eslint-plugin-import'
+import eslintPlugnReact from 'eslint-plugin-react'
+import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 
 const config = defineConfig(
   {
@@ -18,12 +21,27 @@ const config = defineConfig(
     files: ['src/**/*.{js,jsx,ts,tsx}']
   },
   ...nextVitals,
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts'
+  ]),
   js.configs.recommended,
   typescriptEslint.configs.recommended,
   eslintPluginPrettier,
   {
+    settings: {
+      react: { version: '19' } // Avoids auto-detection crash https://github.com/vercel/next.js/issues/89764
+    }
+  },
+  {
     plugins: {
-      vitest
+      vitest,
+      react: eslintPlugnReact,
+      'react-hooks': eslintPluginReactHooks,
+      import: eslintPluginImport
     },
     languageOptions: {
       globals: {
@@ -36,16 +54,7 @@ const config = defineConfig(
       }
     },
     rules: {
-      ...vitest.configs.recommended.rules, // you can also use vitest.configs.all.rules to enable all rules
-      'vitest/max-nested-describe': ['error', { max: 3 }], // you can also modify rules' behavior using option like this
-      'react/react-in-jsx-scope': 'off',
-      'react/jsx-uses-react': 'off',
-      'react/jsx-filename-extension': [
-        1,
-        {
-          extensions: ['.js', '.jsx', '.ts', '.tsx']
-        }
-      ]
+      ...vitest.configs.recommended.rules // you can also use vitest.configs.all.rules to enable all rules
     }
   },
   eslintConfigPrettier
