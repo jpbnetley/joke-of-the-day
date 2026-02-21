@@ -5,7 +5,6 @@ import vitest from '@vitest/eslint-plugin'
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import nextVitals from 'eslint-config-next/core-web-vitals'
-import eslintPluginImport from 'eslint-plugin-import'
 import eslintPlugnReact from 'eslint-plugin-react'
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks'
 
@@ -40,8 +39,7 @@ const config = defineConfig(
     plugins: {
       vitest,
       react: eslintPlugnReact,
-      'react-hooks': eslintPluginReactHooks,
-      import: eslintPluginImport
+      'react-hooks': eslintPluginReactHooks
     },
     languageOptions: {
       globals: {
@@ -54,7 +52,12 @@ const config = defineConfig(
       }
     },
     rules: {
-      ...vitest.configs.recommended.rules // you can also use vitest.configs.all.rules to enable all rules
+      ...vitest.configs.recommended.rules, // you can also use vitest.configs.all.rules to enable all rules
+      ...eslintPlugnReact.configs.recommended.rules,
+      ...eslintPluginReactHooks.configs.recommended.rules,
+      'vitest/max-nested-describe': ['error', { max: 3 }], // you can also modify rules' behavior using option like this
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-uses-react': 'off'
     }
   },
   eslintConfigPrettier
