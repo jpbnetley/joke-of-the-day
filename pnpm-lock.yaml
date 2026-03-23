@@ -43,8 +43,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.0.3)
       '@next/eslint-plugin-next':
-        specifier: ^16.2.0
-        version: 16.2.0
+        specifier: ^16.2.1
+        version: 16.2.1
       '@testing-library/dom':
         specifier: ^10.4.1
         version: 10.4.1
@@ -643,6 +643,9 @@ packages:
 
   '@next/eslint-plugin-next@16.2.0':
     resolution: {integrity: sha512-3D3pEMcGKfENC9Pzlkr67GOm+205+5hRdYPZvHuNIy5sr9k0ybSU8g+sxOO/R/RLEh/gWZ3UlY+5LmEyZ1xgXQ==}
+
+  '@next/eslint-plugin-next@16.2.1':
+    resolution: {integrity: sha512-r0epZGo24eT4g08jJlg2OEryBphXqO8aL18oajoTKLzHJ6jVr6P6FI58DLMug04MwD3j8Fj0YK0slyzneKVyzA==}
 
   '@next/swc-darwin-arm64@16.2.0':
     resolution: {integrity: sha512-/JZsqKzKt01IFoiLLAzlNqys7qk2F3JkcUhj50zuRhKDQkZNOz9E5N6wAQWprXdsvjRP4lTFj+/+36NSv5AwhQ==}
@@ -3139,6 +3142,10 @@ snapshots:
   '@next/env@16.2.0': {}
 
   '@next/eslint-plugin-next@16.2.0':
+    dependencies:
+      fast-glob: 3.3.1
+
+  '@next/eslint-plugin-next@16.2.1':
     dependencies:
       fast-glob: 3.3.1
 
