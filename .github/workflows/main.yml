@@ -36,7 +36,7 @@ jobs:
       contents: read
 
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - uses: pnpm/action-setup@v5
 
     - name: Use Node.js ${{ env.node_version }}
@@ -45,8 +45,6 @@ jobs:
         node-version: ${{ env.node_version }}
         cache: 'pnpm'
     - run: pnpm install --prod
-
-    - uses: actions/checkout@v5
 
     - name: Get env name
       id: envRunner
@@ -75,7 +73,7 @@ jobs:
     name: Generate Release Notes
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           persist-credentials: false
 

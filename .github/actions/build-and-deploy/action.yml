@@ -1,4 +1,5 @@
 name: Build and deploy
+description: Builds and deploys to correct env
 
 inputs:
   environment:
