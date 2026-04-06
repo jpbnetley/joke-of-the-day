@@ -1,3 +1,10 @@
+# [1.1.0-dev.355](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.354...v1.1.0-dev.355) (2026-04-06)
+
+
+### Bug Fixes
+
+* migrate to typescript 6 ([#2082](https://github.com/jpbnetley/joke-of-the-day/issues/2082)) ([db4a055](https://github.com/jpbnetley/joke-of-the-day/commit/db4a055e9d00aa4b200563b58b7f38ab0bf4efb3))
+
 # [1.1.0-dev.354](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.353...v1.1.0-dev.354) (2026-03-31)
 
 
