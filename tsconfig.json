@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["vitest/globals"],
+    "types": ["node","vitest/globals"],
     "target": "ES6",
     "lib": [
       "dom",
