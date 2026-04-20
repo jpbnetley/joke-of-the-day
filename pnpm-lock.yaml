@@ -74,8 +74,8 @@ importers:
         specifier: ^7.37.5
         version: 7.37.5(eslint@10.2.1)
       eslint-plugin-react-hooks:
-        specifier: ^7.1.0
-        version: 7.1.0(eslint@10.2.1)
+        specifier: ^7.1.1
+        version: 7.1.1(eslint@10.2.1)
       globals:
         specifier: ^17.5.0
         version: 17.5.0
@@ -1214,6 +1214,11 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
+  baseline-browser-mapping@2.10.20:
+    resolution: {integrity: sha512-1AaXxEPfXT+GvTBJFuy4yXVHWJBXa4OdbIebGN/wX5DlsIkU0+wzGnd2lOzokSk51d5LUmqjgBLRLlypLUqInQ==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
   bidi-js@1.0.3:
     resolution: {integrity: sha512-RKshQI1R3YQ+n9YJz2QQ147P66ELpa1FQEg20Dk8oW9t2KgLbpDLLp9aGZ7y8WHSshDknG0bknqGw5/tyCs5tw==}
 
@@ -1356,8 +1361,8 @@ packages:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
     engines: {node: '>= 0.4'}
 
-  electron-to-chromium@1.5.339:
-    resolution: {integrity: sha512-Is+0BBHJ4NrdpAYiperrmp53pLywG/yV/6lIMTAnhxvzj/Cmn5Q/ogSHC6AKe7X+8kPLxxFk0cs5oc/3j/fxIg==}
+  electron-to-chromium@1.5.340:
+    resolution: {integrity: sha512-908qahOGocRMinT2nM3ajCEM99H4iPdv84eagPP3FfZy/1ZGeOy2CZYzjhms81ckOPCXPlW7LkY4XpxD8r1DrA==}
 
   emoji-regex@10.6.0:
     resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
@@ -1503,8 +1508,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-react-hooks@7.1.0:
-    resolution: {integrity: sha512-LDicyhrRFrIaheDYryeM2W8gWyZXnAs4zIr2WVPiOSeTmIu2RjR4x/9N0xLaRWZ+9hssBDGo3AadcohuzAvSvg==}
+  eslint-plugin-react-hooks@7.1.1:
+    resolution: {integrity: sha512-f2I7Gw6JbvCexzIInuSbZpfdQ44D7iqdWX01FKLvrPgqxoE7oMj8clOfto8U6vYiz4yd5oKu39rRSVOe1zRu0g==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0
@@ -3664,6 +3669,8 @@ snapshots:
 
   baseline-browser-mapping@2.10.19: {}
 
+  baseline-browser-mapping@2.10.20: {}
+
   bidi-js@1.0.3:
     dependencies:
       require-from-string: 2.0.2
@@ -3683,9 +3690,9 @@ snapshots:
 
   browserslist@4.28.2:
     dependencies:
-      baseline-browser-mapping: 2.10.19
+      baseline-browser-mapping: 2.10.20
       caniuse-lite: 1.0.30001788
-      electron-to-chromium: 1.5.339
+      electron-to-chromium: 1.5.340
       node-releases: 2.0.37
       update-browserslist-db: 1.2.3(browserslist@4.28.2)
 
@@ -3809,7 +3816,7 @@ snapshots:
       es-errors: 1.3.0
       gopd: 1.2.0
 
-  electron-to-chromium@1.5.339: {}
+  electron-to-chromium@1.5.340: {}
 
   emoji-regex@10.6.0: {}
 
@@ -3962,10 +3969,10 @@ snapshots:
       eslint: 10.2.1
       eslint-import-resolver-node: 0.3.10
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1))(eslint@10.2.1)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.2.1)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1))(eslint@10.2.1))(eslint@10.2.1)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@10.2.1)
       eslint-plugin-react: 7.37.5(eslint@10.2.1)
-      eslint-plugin-react-hooks: 7.1.0(eslint@10.2.1)
+      eslint-plugin-react-hooks: 7.1.1(eslint@10.2.1)
       globals: 16.4.0
       typescript-eslint: 8.58.2(eslint@10.2.1)(typescript@6.0.3)
     optionalDependencies:
@@ -3999,7 +4006,7 @@ snapshots:
       tinyglobby: 0.2.16
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.2.1)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1))(eslint@10.2.1))(eslint@10.2.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -4014,7 +4021,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@10.2.1):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.58.2(eslint@10.2.1)(typescript@6.0.3))(eslint@10.2.1))(eslint@10.2.1))(eslint@10.2.1):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -4071,7 +4078,7 @@ snapshots:
     optionalDependencies:
       eslint-config-prettier: 10.1.8(eslint@10.2.1)
 
-  eslint-plugin-react-hooks@7.1.0(eslint@10.2.1):
+  eslint-plugin-react-hooks@7.1.1(eslint@10.2.1):
     dependencies:
       '@babel/core': 7.29.0
       '@babel/parser': 7.29.2
