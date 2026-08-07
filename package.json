@@ -6,7 +6,7 @@
   "engines": {
     "node": ">=24.0.0"
   },
-  "packageManager": "pnpm@11.17.0+sha512.cca3cea332ad254bb84145f966d19f4879615210346fc92c79a047f23a0d7b3cca3c3792f0076ba1f1831d277efbcf0a9119b31a9a60eca7fb3d6231f331ef72",
+  "packageManager": "pnpm@11.20.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -30,8 +30,8 @@
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
-    "eslint-config-next": "^16.2.12",
-    "next": "^16.2.12",
+    "eslint-config-next": "^16.3.0",
+    "next": "^16.3.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-hot-toast": "^2.6.0",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@next/eslint-plugin-next": "^16.2.12",
+    "@next/eslint-plugin-next": "^16.3.0",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/react": "^16.3.2",
     "@vitejs/plugin-react": "^6.0.5",
