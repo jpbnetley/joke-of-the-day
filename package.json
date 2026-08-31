@@ -30,14 +30,13 @@
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
+    "@typescript/native": "npm:typescript@^7.0.2",
     "eslint-config-next": "^16.3.3",
     "next": "^16.3.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-hot-toast": "^2.6.0",
-    "swr": "2.3.3",
-    "@typescript/native": "npm:typescript@^7.0.2",
-    "typescript": "npm:@typescript/typescript6@^6.0.2"
+    "swr": "2.3.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -56,6 +55,7 @@
     "jsdom": "^30.0.1",
     "lint-staged": "^17.4.1",
     "prettier": "^3.9.6",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.68.0",
     "vitest": "^4.1.11"
   }
