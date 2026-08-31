@@ -1,3 +1,11 @@
+# [1.1.0-dev.362](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.361...v1.1.0-dev.362) (2026-08-31)
+
+
+### Bug Fixes
+
+* **deps:** revert to ts6 ([#2254](https://github.com/jpbnetley/joke-of-the-day/issues/2254)) ([f5918d4](https://github.com/jpbnetley/joke-of-the-day/commit/f5918d4d4a51c670d9df706cca0ec39f7100d15b))
+* **deps:** update packages ([#2253](https://github.com/jpbnetley/joke-of-the-day/issues/2253)) ([26786a4](https://github.com/jpbnetley/joke-of-the-day/commit/26786a4f520cb3a96c5f8ecd5300ece1cd74908d))
+
 # [1.1.0-dev.361](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.360...v1.1.0-dev.361) (2026-08-28)
 
 
