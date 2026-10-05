@@ -206,8 +206,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.11.0)
       '@next/eslint-plugin-next':
-        specifier: ^16.3.7
-        version: 16.3.7(eslint@10.11.0)
+        specifier: ^16.3.8
+        version: 16.3.8(eslint@10.11.0)
       '@testing-library/dom':
         specifier: ^10.4.2
         version: 10.4.2
@@ -672,6 +672,9 @@ packages:
 
   '@next/eslint-plugin-next@16.3.7':
     resolution: {integrity: sha512-ZQwUKBxqKAasarxLHJkkIv0cuG80pJ7TKvCUcFvlKewkuzYkL+Lsxb++DQlcBnY4uT0kOazDye4j1pyDPlDcDQ==}
+
+  '@next/eslint-plugin-next@16.3.8':
+    resolution: {integrity: sha512-eCR9RcLTZrVS+K3+VOhi0xMdUUGNuriCHHhU1ZoABC/QQ/Gp0OWbLKQxV2/9DkmihYdYRcQWFmZXW8M1AMUXYw==}
 
   '@next/swc-darwin-arm64@16.3.7':
     resolution: {integrity: sha512-MDAd3woxfJOVFtfG2VAuaz5zyyVZTMVUPJAknotCNgeEPrPlRBlcV9YSd8S620P6TiSc2MWpfwO/UAHl9EWRug==}
@@ -3174,6 +3177,13 @@ snapshots:
   '@next/env@16.3.7': {}
 
   '@next/eslint-plugin-next@16.3.7(eslint@10.11.0)':
+    dependencies:
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.11.0)
+      fast-glob: 3.3.1
+    transitivePeerDependencies:
+      - eslint
+
+  '@next/eslint-plugin-next@16.3.8(eslint@10.11.0)':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.11.0)
       fast-glob: 3.3.1
