@@ -184,8 +184,8 @@ importers:
         specifier: npm:typescript@^7.0.2
         version: typescript@7.0.2
       eslint-config-next:
-        specifier: ^16.3.7
-        version: 16.3.7(@typescript-eslint/parser@8.71.0(eslint@10.11.0)(typescript@6.0.3))(eslint@10.11.0)(typescript@6.0.3)
+        specifier: ^16.3.8
+        version: 16.3.8(@typescript-eslint/parser@8.71.0(eslint@10.11.0)(typescript@6.0.3))(eslint@10.11.0)(typescript@6.0.3)
       next:
         specifier: ^16.3.7
         version: 16.3.7(@babel/core@7.29.7)(@types/node@24.19.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -672,6 +672,9 @@ packages:
 
   '@next/eslint-plugin-next@16.3.7':
     resolution: {integrity: sha512-ZQwUKBxqKAasarxLHJkkIv0cuG80pJ7TKvCUcFvlKewkuzYkL+Lsxb++DQlcBnY4uT0kOazDye4j1pyDPlDcDQ==}
+
+  '@next/eslint-plugin-next@16.3.8':
+    resolution: {integrity: sha512-eCR9RcLTZrVS+K3+VOhi0xMdUUGNuriCHHhU1ZoABC/QQ/Gp0OWbLKQxV2/9DkmihYdYRcQWFmZXW8M1AMUXYw==}
 
   '@next/swc-darwin-arm64@16.3.7':
     resolution: {integrity: sha512-MDAd3woxfJOVFtfG2VAuaz5zyyVZTMVUPJAknotCNgeEPrPlRBlcV9YSd8S620P6TiSc2MWpfwO/UAHl9EWRug==}
@@ -1534,8 +1537,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-next@16.3.7:
-    resolution: {integrity: sha512-/a7OkjM1dBK3CY159QlqXI2d3DS6F9CjTF8iwAACas2keulTTpPG0ap7ClRstBhPCr0OH1yBlRX9tpvlLZzqzg==}
+  eslint-config-next@16.3.8:
+    resolution: {integrity: sha512-81vovwMe6NGnoFsl0KUJWzlS+y239i3fdsxs49gSEX3pDQW2cuKy+fxUPXNkQqqx6OCPheYPtBlSufc9aZ0k+w==}
     peerDependencies:
       eslint: '>=9.0.0'
       typescript: '>=3.3.1'
@@ -3180,6 +3183,13 @@ snapshots:
     transitivePeerDependencies:
       - eslint
 
+  '@next/eslint-plugin-next@16.3.8(eslint@10.11.0)':
+    dependencies:
+      '@eslint-community/eslint-utils': 4.9.1(eslint@10.11.0)
+      fast-glob: 3.3.1
+    transitivePeerDependencies:
+      - eslint
+
   '@next/swc-darwin-arm64@16.3.7':
     optional: true
 
@@ -3952,9 +3962,9 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-next@16.3.7(@typescript-eslint/parser@8.71.0(eslint@10.11.0)(typescript@6.0.3))(eslint@10.11.0)(typescript@6.0.3):
+  eslint-config-next@16.3.8(@typescript-eslint/parser@8.71.0(eslint@10.11.0)(typescript@6.0.3))(eslint@10.11.0)(typescript@6.0.3):
     dependencies:
-      '@next/eslint-plugin-next': 16.3.7(eslint@10.11.0)
+      '@next/eslint-plugin-next': 16.3.8(eslint@10.11.0)
       eslint: 10.11.0
       eslint-import-resolver-node: 0.3.10
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@10.11.0)
