@@ -1,3 +1,10 @@
+# [1.1.0-dev.367](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.366...v1.1.0-dev.367) (2026-10-12)
+
+
+### Bug Fixes
+
+* **deps:** update packages ([#2295](https://github.com/jpbnetley/joke-of-the-day/issues/2295)) ([5674260](https://github.com/jpbnetley/joke-of-the-day/commit/567426052d7f24614d685cba2e65dd3c41f5ff29))
+
 # [1.1.0-dev.366](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.365...v1.1.0-dev.366) (2026-10-05)
 
 
