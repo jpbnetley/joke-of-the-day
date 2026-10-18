@@ -1,4 +1,5 @@
 import { getJokesAsJson } from './joke'
+import data from 'data/reddit-joke-response.json'
 
 /**
  * fetches the reddit jokes, if the reddit joke api returns an error,
@@ -8,10 +9,9 @@ import { getJokesAsJson } from './joke'
 export const handleFetchRedditJokes = async () => {
   try {
     const redditResponse = await getJokesAsJson()
-
     return redditResponse.data.children
   } catch (error) {
     console.error(error)
-    return []
+    return data.data.children
   }
 }
