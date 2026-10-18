@@ -1,3 +1,15 @@
+# [1.1.0-dev.368](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.367...v1.1.0-dev.368) (2026-10-18)
+
+
+### Bug Fixes
+
+* **deps:** update packages ([35aa76a](https://github.com/jpbnetley/joke-of-the-day/commit/35aa76af4ef88bb8e54d32deb8663021cd76fdd7))
+
+
+### Features
+
+* add fallback json data as fallback for jokes ([981116e](https://github.com/jpbnetley/joke-of-the-day/commit/981116eb2636e852917c215d438e8ea38f6fa310))
+
 # [1.1.0-dev.367](https://github.com/jpbnetley/joke-of-the-day/compare/v1.1.0-dev.366...v1.1.0-dev.367) (2026-10-12)
 
 
